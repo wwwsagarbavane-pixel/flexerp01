@@ -180,9 +180,35 @@
 .bg-pink { background: linear-gradient(135deg, #ec4899, #f472b6); box-shadow: 0 8px 16px rgba(236,72,153,0.2); }
 
 @media (max-width: 1024px) {
-  .workspace-grid { grid-template-columns: repeat(2, 1fr); }
+  .workspace-grid { grid-template-columns: repeat(2, 1fr); padding: 0 20px; }
+  .workspace-nav { margin: 20px 20px 40px 20px; width: calc(100% - 40px); }
 }
+
 @media (max-width: 768px) {
-  .workspace-grid { grid-template-columns: 1fr; }
+  .workspace-page { padding-bottom: 40px; }
+  .workspace-nav {
+    margin: 12px 12px 28px 12px;
+    width: calc(100% - 24px);
+    padding: 10px 14px;
+    border-radius: 16px;
+  }
   .nav-center { display: none; }
+  .profile-info { display: none; }
+  .workspace-header { margin-bottom: 28px; padding: 0 16px; }
+  .workspace-header h1 { font-size: 28px; letter-spacing: -0.5px; }
+  .workspace-header p { font-size: 14px; }
+  .workspace-grid { grid-template-columns: 1fr; padding: 0 16px; gap: 16px; }
+  .workspace-card { padding: 20px; border-radius: 20px; }
+}
+
+@media (max-width: 480px) {
+  .workspace-nav {
+    margin: 8px 8px 20px 8px;
+    width: calc(100% - 16px);
+    padding: 8px 12px;
+  }
+  .nav-title { font-size: 16px; }
+  .workspace-header h1 { font-size: 24px; }
+  .workspace-card { padding: 16px; }
+  .card-icon { width: 40px; height: 40px; margin-bottom: 16px; }
 }

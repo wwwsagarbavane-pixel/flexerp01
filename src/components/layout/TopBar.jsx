@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { Search, Bell, Mail, LogOut, Shield, ChevronLeft, ChevronDown, User, Settings, Building2, Check, Database, RefreshCw, Home } from 'lucide-react';
+import { Search, Bell, Mail, LogOut, Shield, ChevronLeft, ChevronDown, User, Settings, Building2, Check, Database, RefreshCw, Home, Menu, X } from 'lucide-react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useStore } from '../../data/mockStore';
 import './TopBar.css';
 
-export default function TopBar() {
+export default function TopBar({ onToggleMobileMenu, isMobileMenuOpen }) {
   const navigate = useNavigate();
   const location = useLocation();
   const store = useStore();
@@ -53,8 +53,21 @@ export default function TopBar() {
   return (
     <header className="topbar">
       <div className="topbar-left">
+        {/* Mobile Sidebar Hamburger Toggle */}
+        {onToggleMobileMenu && (
+          <button 
+            type="button"
+            className="mobile-menu-btn" 
+            onClick={onToggleMobileMenu}
+            title="Toggle Navigation Menu"
+            aria-label="Toggle navigation menu"
+          >
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        )}
+
         {/* Navigation Control Group: Back & Home on EVERY screen */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginRight: '8px' }}>
+        <div className="nav-controls-group" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginRight: '8px' }}>
           <button 
             className="nav-action-btn back-btn" 
             onClick={() => {
@@ -115,7 +128,7 @@ export default function TopBar() {
         </div>
 
         {/* Dynamic Breadcrumbs */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#64748b', fontWeight: '500', marginRight: '16px' }}>
+        <div className="topbar-breadcrumbs" style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#64748b', fontWeight: '500', marginRight: '16px' }}>
           <span 
             style={{ cursor: 'pointer', color: '#2563eb', fontWeight: '600' }} 
             onClick={() => navigate('/modules')}

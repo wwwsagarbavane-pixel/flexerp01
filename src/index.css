@@ -285,3 +285,146 @@ select {
 .cat-metal { background: #e0e7ff; color: #4338ca; }
 .cat-packaging { background: #fae8ff; color: #a21caf; }
 .cat-chemical { background: #ffe4e6; color: #be123c; }
+
+/* ==========================================================================
+   GLOBAL MOBILE & TABLET RESPONSIVE SYSTEM
+   ========================================================================== */
+
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Responsive Table Wrappers */
+.table-responsive,
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure all cards containing tables scroll smoothly rather than expanding page */
+.card,
+.dark-glass-card,
+.card-glass {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Responsive Headings on Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px !important;
+    letter-spacing: -0.3px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+
+  .card {
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* Responsive Headers */
+  .flex-between {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .flex-between > div:last-child {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Buttons on mobile */
+  .btn-primary,
+  .btn-dark-pill,
+  .btn-outline {
+    padding: 10px 18px !important;
+    font-size: 13px !important;
+  }
+
+  /* Filter Ribbons */
+  div.card[style*="justify-content: space-between"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+  div.card[style*="justify-content: space-between"] > div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+  div.card[style*="justify-content: space-between"] select,
+  div.card[style*="justify-content: space-between"] input {
+    width: 100% !important;
+  }
+
+  /* Universal grid responsive collapse */
+  div[style*="grid-template-columns: 1fr 1fr"],
+  div[style*="gridTemplateColumns: 1fr 1fr"],
+  div[style*="grid-template-columns: 2fr 1fr"],
+  div[style*="gridTemplateColumns: 2fr 1fr"],
+  div[style*="grid-template-columns: repeat(4, 1fr)"],
+  div[style*="gridTemplateColumns: repeat(4, 1fr)"],
+  div[style*="grid-template-columns: repeat(5, 1fr)"],
+  div[style*="gridTemplateColumns: repeat(5, 1fr)"],
+  div[style*="repeat(auto-fit, minmax(220px, 1fr))"],
+  div[style*="repeat(auto-fit, minmax(260px, 1fr))"] {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Universal modal responsive containment */
+  div[style*="position: fixed"][style*="z-index: 1000"],
+  .modal-overlay {
+    padding: 8px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  div[style*="position: fixed"] > div[style*="background: rgb(255, 255, 255)"],
+  div[style*="position: fixed"] > div[style*="background: #ffffff"],
+  .modal-content {
+    width: 100% !important;
+    max-width: calc(100vw - 16px) !important;
+    max-height: 92vh !important;
+    overflow-y: auto !important;
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* Double-entry journal lines on mobile */
+  div[style*="grid-template-columns: 2fr 1fr 1fr auto"],
+  div[style*="gridTemplateColumns: 2fr 1fr 1fr auto"] {
+    grid-template-columns: 1fr 1fr auto !important;
+    gap: 8px !important;
+  }
+  div[style*="grid-template-columns: 2fr 1fr 1fr auto"] > div:first-child,
+  div[style*="gridTemplateColumns: 2fr 1fr 1fr auto"] > div:first-child {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 12px !important;
+    border-radius: 14px !important;
+  }
+
+  input, select, textarea, .form-input {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+  }
+
+  .status-badge {
+    padding: 2px 8px !important;
+    font-size: 11px !important;
+  }
+}

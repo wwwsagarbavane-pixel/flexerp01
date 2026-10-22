@@ -179,3 +179,65 @@
 .pro-arrow {
   color: #94a3b8;
 }
+
+/* MOBILE DRAWER ADAPTATIONS */
+.sidebar-close-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #64748b;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.sidebar-close-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 280px;
+    max-width: 85vw;
+    z-index: 1050;
+    transform: translateX(-105%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close-btn {
+    display: flex;
+  }
+
+  .sidebar-header {
+    height: 72px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .sidebar-scroll {
+    padding: 0 16px 20px;
+    gap: 20px;
+  }
+
+  .sidebar-footer {
+    padding: 16px;
+  }
+}

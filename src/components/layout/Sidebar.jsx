@@ -4,11 +4,11 @@ import { useStore } from '../../data/mockStore';
 import { 
   LayoutDashboard, Database, Factory, Users, 
   Box, Truck, BarChart, Clock, Crown, ChevronRight, User,
-  ShoppingCart, ShieldCheck, Activity, Settings, Wrench, ArrowLeftRight, FileText, FileSpreadsheet, LogOut, Building2, Shield, Landmark, Receipt
+  ShoppingCart, ShieldCheck, Activity, Settings, Wrench, ArrowLeftRight, FileText, FileSpreadsheet, LogOut, Building2, Shield, Landmark, Receipt, X
 } from 'lucide-react';
 import './Sidebar.css';
 
-export default function Sidebar() {
+export default function Sidebar({ mobileOpen = false, onClose }) {
   const location = useLocation();
   const store = useStore();
   const tenant = store.selectedTenant;
@@ -89,13 +89,23 @@ export default function Sidebar() {
   const currentLinks = menuConfig[currentModule] || menuConfig['master-data'];
 
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${mobileOpen ? 'mobile-open' : ''}`}>
       <div className="sidebar-header">
-        <div className="logo-container">
-          <Link to="/modules" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-            <img src={logoUrl} alt={tenant ? tenant.name : "Flex ERP"} style={{ height: '40px', objectFit: 'contain' }} />
+        <div className="logo-container" style={{ flex: 1 }}>
+          <Link to="/modules" onClick={onClose} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <img src={logoUrl} alt={tenant ? tenant.name : "Flex ERP"} style={{ height: '36px', objectFit: 'contain' }} />
           </Link>
         </div>
+        {onClose && (
+          <button 
+            className="sidebar-close-btn" 
+            onClick={onClose}
+            aria-label="Close sidebar"
+            type="button"
+          >
+            <X size={20} />
+          </button>
+        )}
       </div>
       
       <div className="sidebar-scroll">
@@ -105,7 +115,7 @@ export default function Sidebar() {
               const Icon = link.icon;
               return (
                 <li key={idx}>
-                  <NavLink to={link.to} className={isActive(link.to)}>
+                  <NavLink to={link.to} onClick={onClose} className={isActive(link.to)}>
                     <Icon size={20} />
                     <span>{link.label}</span>
                   </NavLink>
