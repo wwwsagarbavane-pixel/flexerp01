@@ -5,6 +5,7 @@ import DataTable from '../../components/common/DataTable';
 import Modal from '../../components/common/Modal';
 import { useStore } from '../../data/mockStore';
 import { useToastStore } from '../../data/toastStore';
+import './JournalEntries.css';
 
 export default function JournalEntries() {
   const store = useStore();
@@ -193,19 +194,19 @@ export default function JournalEntries() {
   };
 
   return (
-    <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+    <div className="journal-entries-page">
       {/* Header */}
-      <div className="flex-between">
+      <div className="je-header-row">
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
             <span style={{ fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#7c3aed', background: 'rgba(124,58,237,0.08)', padding: '2px 8px', borderRadius: '4px' }}>Finance & Accounting</span>
           </div>
-          <h1 style={{ fontSize: '32px', fontWeight: '800', letterSpacing: '-0.5px', color: '#0f172a' }}>General Ledger & Journal Entries</h1>
+          <h1 style={{ fontSize: '30px', fontWeight: '800', letterSpacing: '-0.5px', color: '#0f172a' }}>General Ledger & Journal Entries</h1>
           <p style={{ color: '#64748b' }}>Complete double-entry accounting ledger. Procurement and Sales invoices automatically post into respective GL accounts.</p>
         </div>
-        <div style={{ display: 'flex', gap: '12px' }}>
-          <button className="btn-outline" onClick={handleExport} style={{ background: '#ffffff', border: 'none', boxShadow: 'var(--shadow-sm)', padding: '12px 24px', borderRadius: '40px', cursor: 'pointer' }}>
-            <Download size={16} style={{ marginRight: '8px' }}/> Export
+        <div className="je-header-actions">
+          <button className="btn-outline" onClick={handleExport} style={{ background: '#ffffff', border: 'none', boxShadow: 'var(--shadow-sm)', padding: '12px 24px', borderRadius: '40px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <Download size={16} /> Export
           </button>
           <button 
             onClick={handleOpenModal} 
@@ -231,7 +232,7 @@ export default function JournalEntries() {
       </div>
 
       {/* KPI Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+      <div className="kpi-grid-responsive">
         <div className="card" style={{ padding: '20px', borderRadius: '20px', background: '#ffffff', display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(124,58,237,0.1)', color: '#7c3aed', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Landmark size={24} />
@@ -274,62 +275,50 @@ export default function JournalEntries() {
       </div>
 
       {/* Main Content Card with Sub-tabs */}
-      <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '0 0 24px 0', background: '#ffffff', borderRadius: '24px' }}>
-        <div className="flex-between" style={{ borderBottom: '1px solid var(--color-border)', padding: '16px 32px 0 32px' }}>
-          <div style={{ display: 'flex', gap: '28px', alignItems: 'center' }}>
+      <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '0 0 24px 0', background: '#ffffff', borderRadius: '24px', overflow: 'hidden' }}>
+        <div className="je-card-header">
+          <div className="je-tabs-scroll">
             <div 
+              className="je-tab-item"
               onClick={() => handleTabChange('entries')}
               style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '8px', 
-                cursor: 'pointer', 
                 borderBottom: activeTab === 'entries' ? '2px solid #7c3aed' : '2px solid transparent', 
-                paddingBottom: '16px', 
-                marginBottom: '-1px' 
+                color: activeTab === 'entries' ? '#7c3aed' : '#64748b'
               }}
             >
-              <span style={{ fontWeight: '700', fontSize: '14px', color: activeTab === 'entries' ? '#7c3aed' : '#64748b' }}>Journal Entries (Vouchers)</span>
+              <span>Journal Entries (Vouchers)</span>
               <span style={{ fontWeight: '700', fontSize: '12px', background: activeTab === 'entries' ? 'rgba(124,58,237,0.1)' : '#f1f5f9', color: activeTab === 'entries' ? '#7c3aed' : '#64748b', padding: '2px 8px', borderRadius: '12px' }}>
                 {filteredEntries.length}
               </span>
             </div>
 
             <div 
+              className="je-tab-item"
               onClick={() => handleTabChange('ledger')}
               style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '8px', 
-                cursor: 'pointer', 
                 borderBottom: activeTab === 'ledger' ? '2px solid #7c3aed' : '2px solid transparent', 
-                paddingBottom: '16px', 
-                marginBottom: '-1px' 
+                color: activeTab === 'ledger' ? '#7c3aed' : '#64748b'
               }}
             >
-              <span style={{ fontWeight: '700', fontSize: '14px', color: activeTab === 'ledger' ? '#7c3aed' : '#64748b' }}>General Ledger Accounts (Chart of Accounts)</span>
+              <span>GL Accounts (Chart of Accounts)</span>
               <span style={{ fontWeight: '700', fontSize: '12px', background: activeTab === 'ledger' ? 'rgba(124,58,237,0.1)' : '#f1f5f9', color: activeTab === 'ledger' ? '#7c3aed' : '#64748b', padding: '2px 8px', borderRadius: '12px' }}>
                 {calculatedGLAccounts.length}
               </span>
             </div>
 
             <div 
+              className="je-tab-item"
               onClick={() => handleTabChange('flow')}
               style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '8px', 
-                cursor: 'pointer', 
                 borderBottom: activeTab === 'flow' ? '2px solid #7c3aed' : '2px solid transparent', 
-                paddingBottom: '16px', 
-                marginBottom: '-1px' 
+                color: activeTab === 'flow' ? '#7c3aed' : '#64748b'
               }}
             >
-              <span style={{ fontWeight: '700', fontSize: '14px', color: activeTab === 'flow' ? '#7c3aed' : '#64748b' }}>Automated Invoice Flow Audit</span>
+              <span>Automated Invoice Flow Audit</span>
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '12px', paddingBottom: '12px' }}>
+          <div className="je-filters-container">
             {/* Filter by Company Code */}
             <select 
               value={selectedCompanyFilter} 
@@ -371,7 +360,7 @@ export default function JournalEntries() {
         
         {/* TAB 1: JOURNAL ENTRIES LIST WITH ACCORDION DETAILS */}
         {activeTab === 'entries' && (
-          <div style={{ padding: '0 32px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div className="je-entries-list-container">
             {filteredEntries.map(entry => {
               const isExpanded = expandedEntryId === entry.id;
               const isProc = entry.sourceModule === 'Procurement';
@@ -380,32 +369,23 @@ export default function JournalEntries() {
               return (
                 <div 
                   key={entry.id} 
-                  style={{ 
-                    border: '1px solid #e2e8f0', 
-                    borderRadius: '16px', 
-                    overflow: 'hidden',
-                    background: isExpanded ? '#fafafa' : '#ffffff',
-                    transition: 'all 0.2s ease'
-                  }}
+                  className="je-entry-card"
+                  style={{ background: isExpanded ? '#fafafa' : '#ffffff' }}
                 >
                   <div 
+                    className="je-entry-header"
                     onClick={() => setExpandedEntryId(isExpanded ? null : entry.id)}
-                    style={{ 
-                      padding: '16px 20px', 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      justifyContent: 'space-between', 
-                      cursor: 'pointer' 
-                    }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                      <div style={{ color: '#64748b' }}>
+                    <div className="je-entry-info">
+                      <div style={{ color: '#64748b', marginTop: '2px', flexShrink: 0 }}>
                         {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
                       </div>
-                      <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                          <span style={{ fontWeight: '700', fontSize: '15px', color: '#0f172a' }}>{entry.entryNumber || entry.id}</span>
-                          <span style={{ fontFamily: 'monospace', fontSize: '12px', fontWeight: '700', color: '#2563eb', background: 'rgba(37,99,235,0.08)', padding: '2px 8px', borderRadius: '12px' }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, flex: 1, gap: '4px' }}>
+                        <div className="je-entry-title-row">
+                          <span style={{ fontWeight: '800', fontSize: '15px', color: '#0f172a', whiteSpace: 'nowrap' }}>
+                            {entry.entryNumber || entry.id}
+                          </span>
+                          <span style={{ fontFamily: 'monospace', fontSize: '11px', fontWeight: '700', color: '#2563eb', background: 'rgba(37,99,235,0.08)', padding: '2px 8px', borderRadius: '12px', whiteSpace: 'nowrap' }}>
                             Co. {entry.companyCode || '1000'}
                           </span>
                           <span style={{ 
@@ -413,71 +393,78 @@ export default function JournalEntries() {
                             fontWeight: '700', 
                             padding: '2px 8px', 
                             borderRadius: '12px',
+                            whiteSpace: 'nowrap',
                             background: isProc ? 'rgba(37,99,235,0.1)' : isSales ? 'rgba(234,88,12,0.1)' : 'rgba(124,58,237,0.1)',
                             color: isProc ? '#2563eb' : isSales ? '#ea580c' : '#7c3aed'
                           }}>
                             {isProc ? 'Procurement Auto-Post' : isSales ? 'Sales Auto-Post' : 'Manual Journal'}
                           </span>
                         </div>
-                        <span style={{ fontSize: '13px', color: '#475569', marginTop: '2px' }}>
+                        <span style={{ fontSize: '13px', color: '#475569', wordBreak: 'break-word' }}>
                           {entry.description} • Ref: <strong>{entry.reference || 'N/A'}</strong>
                         </span>
                       </div>
                     </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-                      <div style={{ textAlign: 'right' }}>
-                        <div style={{ fontSize: '16px', fontWeight: '800', color: '#0f172a' }}>${entry.totalAmount?.toLocaleString()}</div>
-                        <div style={{ fontSize: '12px', color: '#64748b' }}>{entry.date}</div>
+                    <div className="je-entry-meta">
+                      <div className="je-entry-amount-block" style={{ textAlign: 'right' }}>
+                        <div style={{ fontSize: '16px', fontWeight: '800', color: '#0f172a', whiteSpace: 'nowrap' }}>
+                          ${entry.totalAmount?.toLocaleString()}
+                        </div>
+                        <div style={{ fontSize: '12px', color: '#64748b', whiteSpace: 'nowrap' }}>{entry.date}</div>
                       </div>
-                      <span className="status-badge badge-success">Posted</span>
-                      <button 
-                        onClick={(e) => { e.stopPropagation(); handleDelete(entry.id); }} 
-                        style={{ padding: '6px', color: '#ef4444', background: 'transparent', border: 'none', cursor: 'pointer' }}
-                        title="Delete Journal Entry"
-                      >
-                        <Trash2 size={16} />
-                      </button>
+                      <div className="je-entry-meta-right">
+                        <span className="status-badge badge-success">Posted</span>
+                        <button 
+                          onClick={(e) => { e.stopPropagation(); handleDelete(entry.id); }} 
+                          style={{ padding: '6px', color: '#ef4444', background: 'transparent', border: 'none', cursor: 'pointer' }}
+                          title="Delete Journal Entry"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      </div>
                     </div>
                   </div>
 
                   {/* Expandable Multi-Line Double-Entry Ledger Details */}
                   {isExpanded && (
-                    <div style={{ padding: '16px 24px', background: '#ffffff', borderTop: '1px solid #f1f5f9' }}>
+                    <div style={{ padding: '16px 20px', background: '#ffffff', borderTop: '1px solid #f1f5f9' }}>
                       <div style={{ fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#64748b', marginBottom: '8px' }}>
                         Double-Entry Ledger Lines
                       </div>
-                      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
-                        <thead>
-                          <tr style={{ borderBottom: '1px solid #e2e8f0', color: '#64748b', textAlign: 'left' }}>
-                            <th style={{ padding: '8px 0' }}>GL Account Code</th>
-                            <th style={{ padding: '8px 0' }}>Account Title</th>
-                            <th style={{ padding: '8px 0', textAlign: 'right' }}>Debit ($)</th>
-                            <th style={{ padding: '8px 0', textAlign: 'right' }}>Credit ($)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {entry.lines && entry.lines.map((line, idx) => (
-                            <tr key={idx} style={{ borderBottom: '1px solid #f8fafc' }}>
-                              <td style={{ padding: '10px 0', fontFamily: 'monospace', fontWeight: '600', color: '#2563eb' }}>GL-{line.accountCode}</td>
-                              <td style={{ padding: '10px 0', fontWeight: '500', color: '#0f172a' }}>{line.accountName}</td>
-                              <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: line.debit > 0 ? '700' : '400', color: line.debit > 0 ? '#0f172a' : '#94a3b8' }}>
-                                {line.debit > 0 ? `$${line.debit.toLocaleString()}` : '—'}
-                              </td>
-                              <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: line.credit > 0 ? '700' : '400', color: line.credit > 0 ? '#0f172a' : '#94a3b8' }}>
-                                {line.credit > 0 ? `$${line.credit.toLocaleString()}` : '—'}
-                              </td>
+                      <div className="table-responsive" style={{ width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+                        <table style={{ width: '100%', minWidth: '450px', borderCollapse: 'collapse', fontSize: '13px' }}>
+                          <thead>
+                            <tr style={{ borderBottom: '1px solid #e2e8f0', color: '#64748b', textAlign: 'left' }}>
+                              <th style={{ padding: '8px 0' }}>GL Account Code</th>
+                              <th style={{ padding: '8px 0' }}>Account Title</th>
+                              <th style={{ padding: '8px 0', textAlign: 'right' }}>Debit ($)</th>
+                              <th style={{ padding: '8px 0', textAlign: 'right' }}>Credit ($)</th>
                             </tr>
-                          ))}
-                          <tr style={{ borderTop: '2px solid #e2e8f0', fontWeight: '800' }}>
-                            <td colSpan={2} style={{ padding: '10px 0', color: '#047857' }}>
-                              ✔ Balanced Ledger (Debits = Credits)
-                            </td>
-                            <td style={{ padding: '10px 0', textAlign: 'right', color: '#0f172a' }}>${entry.totalAmount?.toLocaleString()}</td>
-                            <td style={{ padding: '10px 0', textAlign: 'right', color: '#0f172a' }}>${entry.totalAmount?.toLocaleString()}</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                          </thead>
+                          <tbody>
+                            {entry.lines && entry.lines.map((line, idx) => (
+                              <tr key={idx} style={{ borderBottom: '1px solid #f8fafc' }}>
+                                <td style={{ padding: '10px 0', fontFamily: 'monospace', fontWeight: '600', color: '#2563eb' }}>GL-{line.accountCode}</td>
+                                <td style={{ padding: '10px 0', fontWeight: '500', color: '#0f172a' }}>{line.accountName}</td>
+                                <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: line.debit > 0 ? '700' : '400', color: line.debit > 0 ? '#0f172a' : '#94a3b8' }}>
+                                  {line.debit > 0 ? `$${line.debit.toLocaleString()}` : '—'}
+                                </td>
+                                <td style={{ padding: '10px 0', textAlign: 'right', fontWeight: line.credit > 0 ? '700' : '400', color: line.credit > 0 ? '#0f172a' : '#94a3b8' }}>
+                                  {line.credit > 0 ? `$${line.credit.toLocaleString()}` : '—'}
+                                </td>
+                              </tr>
+                            ))}
+                            <tr style={{ borderTop: '2px solid #e2e8f0', fontWeight: '800' }}>
+                              <td colSpan={2} style={{ padding: '10px 0', color: '#047857' }}>
+                                ✔ Balanced Ledger (Debits = Credits)
+                              </td>
+                              <td style={{ padding: '10px 0', textAlign: 'right', color: '#0f172a' }}>${entry.totalAmount?.toLocaleString()}</td>
+                              <td style={{ padding: '10px 0', textAlign: 'right', color: '#0f172a' }}>${entry.totalAmount?.toLocaleString()}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -488,8 +475,8 @@ export default function JournalEntries() {
 
         {/* TAB 2: GENERAL LEDGER CHART OF ACCOUNTS */}
         {activeTab === 'ledger' && (
-          <div style={{ padding: '0 32px' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
+          <div className="table-responsive" style={{ padding: '0 20px', width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <table style={{ width: '100%', minWidth: '650px', borderCollapse: 'collapse', fontSize: '13px' }}>
               <thead>
                 <tr style={{ borderBottom: '2px solid #e2e8f0', color: '#64748b', textAlign: 'left' }}>
                   <th style={{ padding: '12px 8px' }}>Account Code</th>
@@ -548,7 +535,7 @@ export default function JournalEntries() {
 
         {/* TAB 3: AUTOMATED INVOICE FLOW AUDIT */}
         {activeTab === 'flow' && (
-          <div style={{ padding: '0 32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div style={{ padding: '0 20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <div style={{ background: '#f8fafc', borderRadius: '16px', padding: '16px 20px', border: '1px solid #e2e8f0' }}>
               <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#0f172a', marginBottom: '4px' }}>Automated Accounting Integration Rules</h3>
               <p style={{ fontSize: '13px', color: '#64748b' }}>
@@ -557,7 +544,7 @@ export default function JournalEntries() {
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
               {/* Procurement Invoices */}
               <div style={{ border: '1px solid #e2e8f0', borderRadius: '16px', padding: '16px' }}>
                 <h4 style={{ fontSize: '14px', fontWeight: '700', color: '#2563eb', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '6px' }}>

@@ -90,11 +90,15 @@ export const useStore = create((set, get) => ({
     { id: 'V-004', code: 'V-004', name: 'ElectroComponents Inc', type: 'Supplier', location: 'Austin', status: 'Active' },
     { id: 'V-005', code: 'V-005', name: 'Industrial Chem Ltd', type: 'Supplier', location: 'Houston', status: 'Active' }
   ]),
-  customers: [
-    { id: 'CUST-001', code: 'CUST-001', name: 'Global AutoCorp', type: 'Enterprise', location: 'Detroit', status: 'Active' },
-    { id: 'CUST-002', code: 'CUST-002', name: 'Tech Systems Integrators', type: 'Enterprise', location: 'San Jose', status: 'Active' },
-    { id: 'CUST-003', code: 'CUST-003', name: 'National Distributors', type: 'Distributor', location: 'Dallas', status: 'Active' }
-  ],
+  customers: getStorage('customers', [
+    { companyId: 'C-001', id: 'CUST-001', code: 'CUST-001', name: 'Global AutoCorp', contact: 'Michael Scott', creditLimit: '150,000', location: 'Detroit', status: 'Active' },
+    { companyId: 'C-001', id: 'CUST-002', code: 'CUST-002', name: 'Tech Systems Integrators', contact: 'Dwight Schrute', creditLimit: '85,000', location: 'San Jose', status: 'Active' },
+    { companyId: 'C-001', id: 'CUST-003', code: 'CUST-003', name: 'National Distributors', contact: 'Jim Halpert', creditLimit: '220,000', location: 'Dallas', status: 'Active' },
+    { companyId: 'C-001', id: 'CUST-004', code: 'CUST-004', name: 'EuroTech Machinery', contact: 'Pam Beesly', creditLimit: '95,000', location: 'Frankfurt', status: 'Active' }
+  ]),
+  addCustomer: (item) => get().genericAdd('customers', item),
+  updateCustomer: (id, item) => get().genericUpdate('customers', id, item),
+  deleteCustomer: (id) => get().genericDelete('customers', id),
 
   companies: [
     { id: 'C-001', name: 'Demo Industries', type: 'Manufacturing', logoUrl: '/logo.png', status: 'Active' }

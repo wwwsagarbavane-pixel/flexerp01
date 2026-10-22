@@ -304,33 +304,46 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Ensure all cards containing tables scroll smoothly rather than expanding page */
+/* Ensure cards never cause outer horizontal scroll */
 .card,
 .dark-glass-card,
 .card-glass {
   max-width: 100%;
-  overflow-x: auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-/* Responsive Headings on Mobile */
+/* Responsive Headings & Global Mobile Rules */
 @media (max-width: 768px) {
   h1 {
-    font-size: 24px !important;
+    font-size: 22px !important;
     letter-spacing: -0.3px !important;
+    line-height: 1.25 !important;
   }
   h2 {
     font-size: 18px !important;
   }
 
   .card {
-    padding: 16px !important;
+    padding: 14px !important;
     border-radius: 16px !important;
+  }
+
+  /* Universal padding containment on mobile */
+  div[style*="16px 32px"],
+  div[style*="0 32px"],
+  div[style*="padding: 24px"],
+  div[style*="padding: '24px'"],
+  div[style*="padding: 0 32px"],
+  div[style*="padding: '0 32px'"] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   /* Responsive Headers */
   .flex-between {
     flex-direction: column !important;
-    align-items: flex-start !important;
+    align-items: stretch !important;
     gap: 12px !important;
   }
 
@@ -345,25 +358,66 @@ html, body {
   .btn-primary,
   .btn-dark-pill,
   .btn-outline {
-    padding: 10px 18px !important;
+    padding: 10px 16px !important;
     font-size: 13px !important;
   }
 
-  /* Filter Ribbons */
-  div.card[style*="justify-content: space-between"] {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 12px !important;
-  }
-  div.card[style*="justify-content: space-between"] > div {
-    flex-direction: column !important;
-    align-items: stretch !important;
+  /* Tables responsiveness */
+  .table-responsive {
     width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    border-radius: 12px !important;
+  }
+  .table-responsive table,
+  .data-table {
+    min-width: 620px !important;
+  }
+
+  /* Sub-tabs horizontal scrolling */
+  div[style*="gap: 28px"],
+  div[style*="gap: 32px"],
+  div[style*="gap:28px"],
+  div[style*="gap:32px"] {
+    display: flex !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    white-space: nowrap !important;
+    scrollbar-width: none !important;
+    gap: 14px !important;
+    width: 100% !important;
+    padding-bottom: 8px !important;
+  }
+  div[style*="gap: 28px"] > div,
+  div[style*="gap: 32px"] > div,
+  div[style*="gap:28px"] > div,
+  div[style*="gap:32px"] > div {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  /* Filter Ribbons */
+  div.card[style*="justify-content: space-between"],
+  div[style*="padding-bottom: 12px"],
+  div[style*="paddingBottom: '12px'"],
+  div[style*="paddingBottom: 12px"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
     gap: 10px !important;
+    width: 100% !important;
+  }
+  div.card[style*="justify-content: space-between"] > div,
+  div[style*="padding-bottom: 12px"] > div {
+    width: 100% !important;
   }
   div.card[style*="justify-content: space-between"] select,
-  div.card[style*="justify-content: space-between"] input {
+  div.card[style*="justify-content: space-between"] input,
+  div[style*="padding-bottom: 12px"] select,
+  div[style*="padding-bottom: 12px"] input,
+  div[style*="padding-bottom: 12px"] > div,
+  div[style*="padding-bottom: 12px"] > div > input {
     width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   /* Universal grid responsive collapse */

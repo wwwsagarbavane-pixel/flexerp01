@@ -9,7 +9,7 @@ export default function ListScreen() {
   const store = useStore();
   const allData = store.customers || [];
   const currentUser = store.currentUser || { companyId: 'SYSTEM', role: 'Super Admin' };
-  const data = currentUser.companyId === 'SYSTEM' ? allData : allData.filter(item => item.companyId === currentUser.companyId);
+  const data = currentUser.companyId === 'SYSTEM' ? allData : allData.filter(item => item.companyId === currentUser.companyId || !item.companyId);
   
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('All');

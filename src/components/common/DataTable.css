@@ -1,0 +1,192 @@
+/* DataTable Responsive Styles */
+.data-table-container {
+  width: 100%;
+}
+
+.data-table-view-toggle {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.view-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-toggle-btn.active {
+  background: var(--color-primary, #2563eb);
+  color: #ffffff;
+  border-color: var(--color-primary, #2563eb);
+}
+
+.desktop-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--color-surface, #ffffff);
+  border-radius: var(--border-radius-sm, 12px);
+}
+
+.data-table {
+  width: 100%;
+  min-width: 650px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  color: var(--color-text-light, #64748b);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--color-text-dark, #0f172a);
+  border-bottom: 1px solid var(--color-border, #f1f5f9);
+  white-space: nowrap;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* MOBILE CARDS VIEW */
+.mobile-cards-wrapper {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.mobile-data-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+}
+
+.mobile-data-card:hover {
+  border-color: #cbd5e1;
+}
+
+.mobile-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mobile-card-primary-tag {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-family: monospace;
+}
+
+.mobile-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.mobile-card-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.mobile-card-field-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mobile-field-key {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.mobile-field-val {
+  color: #1e293b;
+  font-weight: 500;
+  text-align: right;
+  word-break: break-word;
+}
+
+.mobile-card-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.mobile-empty-state {
+  padding: 32px 16px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* RESPONSIVE TOGGLE ON MOBILE */
+@media (max-width: 768px) {
+  .data-table-view-toggle {
+    display: flex;
+  }
+
+  /* When mobile view is in card mode (default) */
+  .data-table-container.mode-cards .desktop-table-wrapper {
+    display: none;
+  }
+  .data-table-container.mode-cards .mobile-cards-wrapper {
+    display: flex;
+  }
+
+  /* When user toggles to table mode */
+  .data-table-container.mode-table .desktop-table-wrapper {
+    display: block;
+    width: 100% !important;
+    overflow-x: auto !important;
+  }
+  .data-table-container.mode-table .mobile-cards-wrapper {
+    display: none;
+  }
+}

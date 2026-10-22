@@ -31,8 +31,9 @@ export default function Landing() {
       <nav className={`landing-nav ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <div className="nav-logo">
-            <div className="logo-icon"><div className="logo-inner"></div></div>
-            <span className="logo-text">Enterprise</span>
+            <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+              <img src="/logo.png" alt="Flex ERP" style={{ height: '38px', objectFit: 'contain' }} />
+            </Link>
           </div>
           
           <div className="nav-links desktop-only">
@@ -56,12 +57,12 @@ export default function Landing() {
         
         {mobileMenu && (
           <div className="mobile-nav">
-            <a href="#solutions">Solutions</a>
-            <a href="#industries">Industries</a>
-            <a href="#work">Our Work</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#resources">Resources</a>
-            <Link to="/company-select" className="btn-primary-glass" style={{justifyContent: 'center', marginTop: '16px'}}>Get Started</Link>
+            <a href="#solutions" onClick={() => setMobileMenu(false)}>Solutions</a>
+            <a href="#industries" onClick={() => setMobileMenu(false)}>Industries</a>
+            <a href="#work" onClick={() => setMobileMenu(false)}>Our Work</a>
+            <a href="#pricing" onClick={() => setMobileMenu(false)}>Pricing</a>
+            <a href="#resources" onClick={() => setMobileMenu(false)}>Resources</a>
+            <Link to="/company-select" onClick={() => setMobileMenu(false)} className="btn-primary-glass" style={{justifyContent: 'center', marginTop: '16px'}}>Get Started</Link>
           </div>
         )}
       </nav>
@@ -72,6 +73,10 @@ export default function Landing() {
         <div className="hero-overlay"></div>
         <div className="hero-container">
           <div className="hero-content">
+            <div className="hero-logo-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginBottom: '16px', background: 'rgba(255, 255, 255, 0.92)', backdropFilter: 'blur(12px)', padding: '8px 20px 8px 12px', borderRadius: '40px', boxShadow: '0 8px 25px rgba(15, 23, 42, 0.08)', border: '1px solid rgba(255, 255, 255, 1)' }}>
+              <img src="/logo.png" alt="Flex ERP" style={{ height: '26px', objectFit: 'contain' }} />
+              <span style={{ fontSize: '13px', fontWeight: '800', color: '#0f172a', letterSpacing: '-0.2px' }}>Next-Gen Enterprise Platform</span>
+            </div>
             <div className="eyebrow">
               <span className="dot"></span> CUSTOM ERP SOLUTIONS
             </div>
@@ -88,6 +93,64 @@ export default function Landing() {
               <span><Check size={16} /> Developed</span>
               <span><Check size={16} /> Integrated</span>
               <span><Check size={16} /> Scaled</span>
+            </div>
+
+            {/* MOBILE HERO VISUAL SHOWCASE - The Main Subject of Flex ERP */}
+            <div className="mobile-hero-showcase">
+              <div className="m-hero-card">
+                {/* Header */}
+                <div className="m-hero-header">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <img src="/logo.png" alt="Flex ERP" style={{ height: '22px', objectFit: 'contain' }} />
+                    <span style={{ fontSize: '13px', fontWeight: '800', color: '#0f172a' }}>Live System Control</span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', fontWeight: '700', color: '#059669', background: 'rgba(16,185,129,0.1)', padding: '3px 10px', borderRadius: '12px' }}>
+                    <span className="live-pulse-dot"></span> Online
+                  </div>
+                </div>
+
+                {/* Metric Chips */}
+                <div className="m-hero-metrics">
+                  <div className="m-metric-chip">
+                    <span className="m-metric-label">Sales Revenue</span>
+                    <span className="m-metric-val">$1.8M</span>
+                    <span className="m-metric-trend" style={{ color: '#10b981' }}>+15.2% ↑</span>
+                  </div>
+                  <div className="m-metric-chip">
+                    <span className="m-metric-label">Output (OEE)</span>
+                    <span className="m-metric-val">12,450 pcs</span>
+                    <span className="m-metric-trend" style={{ color: '#3b82f6' }}>92% Speed</span>
+                  </div>
+                  <div className="m-metric-chip">
+                    <span className="m-metric-label">System Health</span>
+                    <span className="m-metric-val">99.9%</span>
+                    <span className="m-metric-trend" style={{ color: '#7c3aed' }}>Zero Lag</span>
+                  </div>
+                </div>
+
+                {/* Mini Chart Visualization */}
+                <div className="m-hero-chart">
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                    <span style={{ fontSize: '11px', fontWeight: '700', color: '#64748b', textTransform: 'uppercase' }}>Weekly Performance Index</span>
+                    <span style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb' }}>Real-Time GL Sync</span>
+                  </div>
+                  <div className="m-chart-bars">
+                    {[45, 60, 50, 75, 65, 90, 80, 100].map((h, i) => (
+                      <div key={i} className="m-bar-col">
+                        <div className="m-bar" style={{ height: `${h}%`, background: i === 7 ? 'linear-gradient(180deg, #2563eb, #3b82f6)' : '#cbd5e1' }}></div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Live Floating Badge */}
+                <div className="m-hero-footer">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#2563eb' }}></div>
+                    <span style={{ fontSize: '11px', color: '#475569', fontWeight: '600' }}>Procurement • Sales • Finance • Reports Synced</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -407,9 +470,10 @@ export default function Landing() {
       <footer className="landing-footer">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <div className="logo-icon"><div className="logo-inner"></div></div>
-            <span className="logo-text">Enterprise</span>
-            <p>Building the future of business operations.</p>
+            <Link to="/" style={{ display: 'inline-block', marginBottom: '12px' }}>
+              <img src="/logo.png" alt="Flex ERP" style={{ height: '36px', objectFit: 'contain' }} />
+            </Link>
+            <p>Building the future of business operations with intelligent ERP systems.</p>
           </div>
           <div className="footer-links">
             <h4>Solutions</h4>
