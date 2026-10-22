@@ -1,0 +1,4234 @@
+{
+  "currentUser": {
+    "id": "U-001",
+    "name": "Admin User",
+    "role": "Super Admin",
+    "companyId": "C-001"
+  },
+  "selectedTenant": {
+    "id": "C-001",
+    "name": "Demo Industries",
+    "type": "Manufacturing",
+    "logoUrl": "/logo.png"
+  },
+  "rawMaterials": [
+    {
+      "id": "RM-001",
+      "code": "RM-001",
+      "name": "Steel Sheet 3mm",
+      "category": "Metals",
+      "uom": "kg",
+      "unitCost": 1.2,
+      "status": "Active",
+      "companyId": "C-001"
+    },
+    {
+      "id": "RM-002",
+      "code": "RM-002",
+      "name": "HDPE Granules",
+      "category": "Plastics",
+      "uom": "kg",
+      "unitCost": 0.8,
+      "status": "Active",
+      "companyId": "C-001"
+    },
+    {
+      "id": "RM-003",
+      "code": "RM-003",
+      "name": "M8 Hex Bolts",
+      "category": "Fasteners",
+      "uom": "pcs",
+      "unitCost": 0.05,
+      "status": "Active",
+      "companyId": "C-001"
+    },
+    {
+      "code": "ganehs ",
+      "name": "ba",
+      "category": "Finished Good",
+      "uom": "m",
+      "stock": "55",
+      "reorderLevel": "5",
+      "maxStock": "5",
+      "minStock": "55",
+      "warehouse": "WH-MAIN",
+      "bin": "5",
+      "status": "Draft",
+      "description": "555",
+      "id": "RAW-396994",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T06:59:57.025Z"
+    },
+    {
+      "id": "RM-001-C-002",
+      "code": "RM-001-C-002",
+      "name": "Steel Sheet 3mm",
+      "category": "Metals",
+      "uom": "kg",
+      "unitCost": 1.2,
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "RM-002-C-002",
+      "code": "RM-002-C-002",
+      "name": "HDPE Granules",
+      "category": "Plastics",
+      "uom": "kg",
+      "unitCost": 0.8,
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "RM-003-C-002",
+      "code": "RM-003-C-002",
+      "name": "M8 Hex Bolts",
+      "category": "Fasteners",
+      "uom": "pcs",
+      "unitCost": 0.05,
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "code": "ganehs -C-002",
+      "name": "ba",
+      "category": "Finished Good",
+      "uom": "m",
+      "stock": "55",
+      "reorderLevel": "5",
+      "maxStock": "5",
+      "minStock": "55",
+      "warehouse": "WH-MAIN",
+      "bin": "5",
+      "status": "Draft",
+      "description": "555",
+      "id": "RAW-396994-C-002",
+      "companyId": "C-002",
+      "createdAt": "2026-10-12T06:59:57.025Z"
+    },
+    {
+      "id": "RM-001-C-003",
+      "code": "RM-001-C-003",
+      "name": "Steel Sheet 3mm",
+      "category": "Metals",
+      "uom": "kg",
+      "unitCost": 1.2,
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "RM-002-C-003",
+      "code": "RM-002-C-003",
+      "name": "HDPE Granules",
+      "category": "Plastics",
+      "uom": "kg",
+      "unitCost": 0.8,
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "RM-003-C-003",
+      "code": "RM-003-C-003",
+      "name": "M8 Hex Bolts",
+      "category": "Fasteners",
+      "uom": "pcs",
+      "unitCost": 0.05,
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "code": "ganehs -C-003",
+      "name": "ba",
+      "category": "Finished Good",
+      "uom": "m",
+      "stock": "55",
+      "reorderLevel": "5",
+      "maxStock": "5",
+      "minStock": "55",
+      "warehouse": "WH-MAIN",
+      "bin": "5",
+      "status": "Draft",
+      "description": "555",
+      "id": "RAW-396994-C-003",
+      "companyId": "C-003",
+      "createdAt": "2026-10-12T06:59:57.025Z"
+    },
+    {
+      "code": "d",
+      "name": "d",
+      "category": "Chemicals",
+      "uom": "EA",
+      "stock": "55",
+      "reorderLevel": "557",
+      "minStock": "77",
+      "maxStock": "7",
+      "warehouse": "WH-MAIN",
+      "bin": "77",
+      "status": "Draft",
+      "description": "55",
+      "id": "RAW-164274",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T11:22:44.294Z"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "V-001-C-002",
+      "code": "V-001-C-002",
+      "name": "Apex Steel Traders",
+      "type": "Supplier",
+      "location": "New York",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "V-002-C-002",
+      "code": "V-002-C-002",
+      "name": "Polymer Synthetics",
+      "type": "Supplier",
+      "location": "New Jersey",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "V-003-C-002",
+      "code": "V-003-C-002",
+      "name": "Fasteners Direct",
+      "type": "Supplier",
+      "location": "Chicago",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "V-004-C-002",
+      "code": "V-004-C-002",
+      "name": "ElectroComponents Inc",
+      "type": "Supplier",
+      "location": "Austin",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "V-005-C-002",
+      "code": "V-005-C-002",
+      "name": "Industrial Chem Ltd",
+      "type": "Supplier",
+      "location": "Houston",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "V-001-C-003",
+      "code": "V-001-C-003",
+      "name": "Apex Steel Traders",
+      "type": "Supplier",
+      "location": "New York",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "V-002-C-003",
+      "code": "V-002-C-003",
+      "name": "Polymer Synthetics",
+      "type": "Supplier",
+      "location": "New Jersey",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "V-003-C-003",
+      "code": "V-003-C-003",
+      "name": "Fasteners Direct",
+      "type": "Supplier",
+      "location": "Chicago",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "V-004-C-003",
+      "code": "V-004-C-003",
+      "name": "ElectroComponents Inc",
+      "type": "Supplier",
+      "location": "Austin",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "V-005-C-003",
+      "code": "V-005-C-003",
+      "name": "Industrial Chem Ltd",
+      "type": "Supplier",
+      "location": "Houston",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "code": "V-999",
+      "name": "Om Enterprises",
+      "contact": "Rajesh",
+      "email": "rajesh@om.com",
+      "phone": "9999999999",
+      "gst": "27AAA",
+      "terms": "Net 30",
+      "category": "Raw Material",
+      "status": "Active",
+      "companyId": "C-001",
+      "id": "V-3143"
+    },
+    {
+      "code": "ff",
+      "name": "ff",
+      "contact": "ff",
+      "email": "ff@gmail.com",
+      "phone": "ff",
+      "gst": "f",
+      "category": "Finished Good",
+      "terms": "ff",
+      "status": "Active",
+      "id": "ff",
+      "type": "Finished Good",
+      "location": "ff",
+      "companyId": "C-001"
+    }
+  ],
+  "customers": [
+    {
+      "id": "CUST-001",
+      "code": "CUST-001",
+      "name": "Global AutoCorp",
+      "type": "Enterprise",
+      "location": "Detroit",
+      "status": "Active",
+      "companyId": "C-001"
+    },
+    {
+      "id": "CUST-002",
+      "code": "CUST-002",
+      "name": "Tech Systems Integrators",
+      "type": "Enterprise",
+      "location": "San Jose",
+      "status": "Active",
+      "companyId": "C-001"
+    },
+    {
+      "id": "CUST-003",
+      "code": "CUST-003",
+      "name": "National Distributors",
+      "type": "Distributor",
+      "location": "Dallas",
+      "status": "Active",
+      "companyId": "C-001"
+    },
+    {
+      "id": "CUST-001-C-002",
+      "code": "CUST-001-C-002",
+      "name": "Global AutoCorp",
+      "type": "Enterprise",
+      "location": "Detroit",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "CUST-002-C-002",
+      "code": "CUST-002-C-002",
+      "name": "Tech Systems Integrators",
+      "type": "Enterprise",
+      "location": "San Jose",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "CUST-003-C-002",
+      "code": "CUST-003-C-002",
+      "name": "National Distributors",
+      "type": "Distributor",
+      "location": "Dallas",
+      "status": "Active",
+      "companyId": "C-002"
+    },
+    {
+      "id": "CUST-001-C-003",
+      "code": "CUST-001-C-003",
+      "name": "Global AutoCorp",
+      "type": "Enterprise",
+      "location": "Detroit",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "CUST-002-C-003",
+      "code": "CUST-002-C-003",
+      "name": "Tech Systems Integrators",
+      "type": "Enterprise",
+      "location": "San Jose",
+      "status": "Active",
+      "companyId": "C-003"
+    },
+    {
+      "id": "CUST-003-C-003",
+      "code": "CUST-003-C-003",
+      "name": "National Distributors",
+      "type": "Distributor",
+      "location": "Dallas",
+      "status": "Active",
+      "companyId": "C-003"
+    }
+  ],
+  "companies": [
+    {
+      "id": "C-001",
+      "code": "ABC",
+      "name": "ABC Manufacturing Pvt Ltd",
+      "slug": "abc-manufacturing",
+      "industry": "Manufacturing",
+      "status": "Active",
+      "modules": [
+        "Master Data",
+        "Procurement",
+        "Manufacturing",
+        "Sales",
+        "Reports",
+        "HR"
+      ],
+      "currency": "USD",
+      "created": "2026-01-10",
+      "logoUrl": "/logo.png"
+    },
+    {
+      "id": "C-002",
+      "code": "XYZ",
+      "name": "XYZ Industries",
+      "slug": "xyz-industries",
+      "industry": "Logistics",
+      "status": "Active",
+      "modules": [
+        "Master Data",
+        "Procurement",
+        "Sales",
+        "Reports",
+        "HR"
+      ],
+      "currency": "USD",
+      "created": "2026-03-15",
+      "logoUrl": "/logo.png"
+    },
+    {
+      "id": "C-003",
+      "code": "DEMO",
+      "name": "Demo Manufacturing",
+      "slug": "demo-manufacturing",
+      "industry": "Manufacturing",
+      "status": "Active",
+      "modules": [
+        "Master Data",
+        "Procurement",
+        "Manufacturing",
+        "Sales",
+        "Reports"
+      ],
+      "currency": "USD",
+      "created": "2026-05-20",
+      "logoUrl": "/logo.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "U-001",
+      "companyId": "SYSTEM",
+      "email": "superadmin@erp.local",
+      "password": "password",
+      "name": "System Admin",
+      "roleScope": "SYSTEM",
+      "role": "Super Admin",
+      "status": "Active"
+    },
+    {
+      "id": "U-002",
+      "companyId": "C-001",
+      "email": "admin@abc.local",
+      "password": "password",
+      "name": "Company A Admin",
+      "roleScope": "COMPANY",
+      "role": "Company Admin",
+      "status": "Active"
+    },
+    {
+      "id": "U-003",
+      "companyId": "C-001",
+      "email": "production@abc.local",
+      "password": "password",
+      "name": "Company A Production User",
+      "roleScope": "COMPANY",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "U-004",
+      "companyId": "C-002",
+      "email": "admin@xyz.local",
+      "password": "password",
+      "name": "Company B Admin",
+      "roleScope": "COMPANY",
+      "role": "Company Admin",
+      "status": "Active"
+    },
+    {
+      "id": "U-005",
+      "companyId": "C-002",
+      "email": "sales@xyz.local",
+      "password": "password",
+      "name": "Company B Sales User",
+      "roleScope": "COMPANY",
+      "role": "User",
+      "status": "Active"
+    },
+    {
+      "id": "U-006",
+      "companyId": "C-001",
+      "email": "admin@demo.com",
+      "password": "password",
+      "name": "Admin User",
+      "roleScope": "COMPANY",
+      "role": "Super Admin",
+      "status": "Active"
+    }
+  ],
+  "employees": [
+    {
+      "companyId": "C-001",
+      "id": "EMP-001",
+      "code": "EMP-001",
+      "name": "John Doe",
+      "department": "Production",
+      "designation": "Operator",
+      "manager": "Admin User",
+      "joinDate": "2021-01-15",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-002",
+      "code": "EMP-002",
+      "name": "Jane Smith",
+      "department": "Quality",
+      "designation": "Inspector",
+      "manager": "Admin User",
+      "joinDate": "2021-03-22",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-003",
+      "code": "EMP-003",
+      "name": "Robert Johnson",
+      "department": "Maintenance",
+      "designation": "Technician",
+      "manager": "Admin User",
+      "joinDate": "2022-06-10",
+      "shift": "Night",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-004",
+      "code": "EMP-004",
+      "name": "Emily Davis",
+      "department": "HR",
+      "designation": "HR Executive",
+      "manager": "Admin User",
+      "joinDate": "2022-11-05",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-005",
+      "code": "EMP-005",
+      "name": "Michael Brown",
+      "department": "Logistics",
+      "designation": "Warehouse Manager",
+      "manager": "Admin User",
+      "joinDate": "2023-02-18",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-006",
+      "code": "EMP-006",
+      "name": "Sarah Wilson",
+      "department": "Production",
+      "designation": "Supervisor",
+      "manager": "Admin User",
+      "joinDate": "2020-09-01",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-007",
+      "code": "EMP-007",
+      "name": "David Lee",
+      "department": "Quality",
+      "designation": "QA Lead",
+      "manager": "Admin User",
+      "joinDate": "2021-07-12",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-008",
+      "code": "EMP-008",
+      "name": "Lisa Taylor",
+      "department": "Finance",
+      "designation": "Accountant",
+      "manager": "Admin User",
+      "joinDate": "2023-05-20",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-009",
+      "code": "EMP-009",
+      "name": "James Anderson",
+      "department": "Production",
+      "designation": "Operator",
+      "manager": "Sarah Wilson",
+      "joinDate": "2024-01-10",
+      "shift": "Night",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "EMP-010",
+      "code": "EMP-010",
+      "name": "Emma Thomas",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "manager": "Admin User",
+      "joinDate": "2022-08-15",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "code": "dd",
+      "name": "dd",
+      "department": "dd",
+      "designation": "ddd",
+      "manager": "dd",
+      "shift": "dd",
+      "status": "Active",
+      "joinDate": "2026-10-07",
+      "id": "EMP-853118",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T07:07:33.118Z"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-001-C-002",
+      "code": "EMP-001-C-002",
+      "name": "John Doe",
+      "department": "Production",
+      "designation": "Operator",
+      "manager": "Admin User",
+      "joinDate": "2021-01-15",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-002-C-002",
+      "code": "EMP-002-C-002",
+      "name": "Jane Smith",
+      "department": "Quality",
+      "designation": "Inspector",
+      "manager": "Admin User",
+      "joinDate": "2021-03-22",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-003-C-002",
+      "code": "EMP-003-C-002",
+      "name": "Robert Johnson",
+      "department": "Maintenance",
+      "designation": "Technician",
+      "manager": "Admin User",
+      "joinDate": "2022-06-10",
+      "shift": "Night",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-004-C-002",
+      "code": "EMP-004-C-002",
+      "name": "Emily Davis",
+      "department": "HR",
+      "designation": "HR Executive",
+      "manager": "Admin User",
+      "joinDate": "2022-11-05",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-005-C-002",
+      "code": "EMP-005-C-002",
+      "name": "Michael Brown",
+      "department": "Logistics",
+      "designation": "Warehouse Manager",
+      "manager": "Admin User",
+      "joinDate": "2023-02-18",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-006-C-002",
+      "code": "EMP-006-C-002",
+      "name": "Sarah Wilson",
+      "department": "Production",
+      "designation": "Supervisor",
+      "manager": "Admin User",
+      "joinDate": "2020-09-01",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-007-C-002",
+      "code": "EMP-007-C-002",
+      "name": "David Lee",
+      "department": "Quality",
+      "designation": "QA Lead",
+      "manager": "Admin User",
+      "joinDate": "2021-07-12",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-008-C-002",
+      "code": "EMP-008-C-002",
+      "name": "Lisa Taylor",
+      "department": "Finance",
+      "designation": "Accountant",
+      "manager": "Admin User",
+      "joinDate": "2023-05-20",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-009-C-002",
+      "code": "EMP-009-C-002",
+      "name": "James Anderson",
+      "department": "Production",
+      "designation": "Operator",
+      "manager": "Sarah Wilson",
+      "joinDate": "2024-01-10",
+      "shift": "Night",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "EMP-010-C-002",
+      "code": "EMP-010-C-002",
+      "name": "Emma Thomas",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "manager": "Admin User",
+      "joinDate": "2022-08-15",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "code": "dd-C-002",
+      "name": "dd",
+      "department": "dd",
+      "designation": "ddd",
+      "manager": "dd",
+      "shift": "dd",
+      "status": "Active",
+      "joinDate": "2026-10-07",
+      "id": "EMP-853118-C-002",
+      "companyId": "C-002",
+      "createdAt": "2026-10-12T07:07:33.118Z"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-001-C-003",
+      "code": "EMP-001-C-003",
+      "name": "John Doe",
+      "department": "Production",
+      "designation": "Operator",
+      "manager": "Admin User",
+      "joinDate": "2021-01-15",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-002-C-003",
+      "code": "EMP-002-C-003",
+      "name": "Jane Smith",
+      "department": "Quality",
+      "designation": "Inspector",
+      "manager": "Admin User",
+      "joinDate": "2021-03-22",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-003-C-003",
+      "code": "EMP-003-C-003",
+      "name": "Robert Johnson",
+      "department": "Maintenance",
+      "designation": "Technician",
+      "manager": "Admin User",
+      "joinDate": "2022-06-10",
+      "shift": "Night",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-004-C-003",
+      "code": "EMP-004-C-003",
+      "name": "Emily Davis",
+      "department": "HR",
+      "designation": "HR Executive",
+      "manager": "Admin User",
+      "joinDate": "2022-11-05",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-005-C-003",
+      "code": "EMP-005-C-003",
+      "name": "Michael Brown",
+      "department": "Logistics",
+      "designation": "Warehouse Manager",
+      "manager": "Admin User",
+      "joinDate": "2023-02-18",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-006-C-003",
+      "code": "EMP-006-C-003",
+      "name": "Sarah Wilson",
+      "department": "Production",
+      "designation": "Supervisor",
+      "manager": "Admin User",
+      "joinDate": "2020-09-01",
+      "shift": "Morning",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-007-C-003",
+      "code": "EMP-007-C-003",
+      "name": "David Lee",
+      "department": "Quality",
+      "designation": "QA Lead",
+      "manager": "Admin User",
+      "joinDate": "2021-07-12",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-008-C-003",
+      "code": "EMP-008-C-003",
+      "name": "Lisa Taylor",
+      "department": "Finance",
+      "designation": "Accountant",
+      "manager": "Admin User",
+      "joinDate": "2023-05-20",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-009-C-003",
+      "code": "EMP-009-C-003",
+      "name": "James Anderson",
+      "department": "Production",
+      "designation": "Operator",
+      "manager": "Sarah Wilson",
+      "joinDate": "2024-01-10",
+      "shift": "Night",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "EMP-010-C-003",
+      "code": "EMP-010-C-003",
+      "name": "Emma Thomas",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "manager": "Admin User",
+      "joinDate": "2022-08-15",
+      "shift": "General",
+      "status": "Active"
+    },
+    {
+      "code": "dd-C-003",
+      "name": "dd",
+      "department": "dd",
+      "designation": "ddd",
+      "manager": "dd",
+      "shift": "dd",
+      "status": "Active",
+      "joinDate": "2026-10-07",
+      "id": "EMP-853118-C-003",
+      "companyId": "C-003",
+      "createdAt": "2026-10-12T07:07:33.118Z"
+    }
+  ],
+  "warehouses": [
+    {
+      "companyId": "C-001",
+      "id": "WH-MAIN",
+      "code": "WH-MAIN",
+      "name": "Main Distribution Center",
+      "location": "New York",
+      "capacity": 50000,
+      "binCount": 1200,
+      "manager": "Michael Brown",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "WH-RAW",
+      "code": "WH-RAW",
+      "name": "Raw Materials Storage",
+      "location": "New Jersey",
+      "capacity": 30000,
+      "binCount": 800,
+      "manager": "Michael Brown",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-001",
+      "id": "WH-CHEM",
+      "code": "WH-CHEM",
+      "name": "Hazardous Chemicals",
+      "location": "New Jersey",
+      "capacity": 5000,
+      "binCount": 100,
+      "manager": "Jane Smith",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WH-MAIN-C-002",
+      "code": "WH-MAIN-C-002",
+      "name": "Main Distribution Center",
+      "location": "New York",
+      "capacity": 50000,
+      "binCount": 1200,
+      "manager": "Michael Brown",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WH-RAW-C-002",
+      "code": "WH-RAW-C-002",
+      "name": "Raw Materials Storage",
+      "location": "New Jersey",
+      "capacity": 30000,
+      "binCount": 800,
+      "manager": "Michael Brown",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WH-CHEM-C-002",
+      "code": "WH-CHEM-C-002",
+      "name": "Hazardous Chemicals",
+      "location": "New Jersey",
+      "capacity": 5000,
+      "binCount": 100,
+      "manager": "Jane Smith",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WH-MAIN-C-003",
+      "code": "WH-MAIN-C-003",
+      "name": "Main Distribution Center",
+      "location": "New York",
+      "capacity": 50000,
+      "binCount": 1200,
+      "manager": "Michael Brown",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WH-RAW-C-003",
+      "code": "WH-RAW-C-003",
+      "name": "Raw Materials Storage",
+      "location": "New Jersey",
+      "capacity": 30000,
+      "binCount": 800,
+      "manager": "Michael Brown",
+      "status": "Active"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WH-CHEM-C-003",
+      "code": "WH-CHEM-C-003",
+      "name": "Hazardous Chemicals",
+      "location": "New Jersey",
+      "capacity": 5000,
+      "binCount": 100,
+      "manager": "Jane Smith",
+      "status": "Active"
+    },
+    {
+      "code": "f",
+      "name": "f",
+      "location": "f",
+      "capacity": "5",
+      "binCount": "88",
+      "manager": "8",
+      "status": "Active",
+      "id": "WAR-485442",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T08:41:25.458Z"
+    }
+  ],
+  "financialYears": [
+    {
+      "companyId": "C-001",
+      "id": "FY2026",
+      "code": "FY2026",
+      "name": "FY 2026-2027",
+      "startDate": "2026-04-01",
+      "endDate": "2027-03-31",
+      "status": "Active",
+      "locked": false
+    },
+    {
+      "companyId": "C-001",
+      "id": "FY2025",
+      "code": "FY2025",
+      "name": "FY 2025-2026",
+      "startDate": "2025-04-01",
+      "endDate": "2026-03-31",
+      "status": "Closed",
+      "locked": true
+    },
+    {
+      "code": "gaesh ",
+      "name": "d",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-02",
+      "status": "Inactive",
+      "id": "FIN-059703",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T10:14:19.711Z"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1002",
+      "vendorId": "V-002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-09-18",
+      "expectedDate": "2026-09-28",
+      "items": [
+        {
+          "item": "HDPE Granules",
+          "qty": 5000,
+          "uom": "kg",
+          "price": 0.8,
+          "amount": 4000
+        }
+      ],
+      "amount": 4000,
+      "warehouse": "WH-RAW",
+      "status": "Received",
+      "orderNumber": "PO-26-1002",
+      "total": 4000,
+      "orderDate": "2026-09-18"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1003",
+      "vendorId": "V-003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-09-22",
+      "expectedDate": "2026-10-02",
+      "items": [
+        {
+          "item": "M8 Hex Bolts",
+          "qty": 10000,
+          "uom": "pcs",
+          "price": 0.05,
+          "amount": 500
+        }
+      ],
+      "amount": 500,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1003",
+      "total": 500,
+      "orderDate": "2026-09-22"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1004",
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-09-25",
+      "expectedDate": "2026-10-10",
+      "items": [
+        {
+          "item": "Circuit Boards v2",
+          "qty": 500,
+          "uom": "pcs",
+          "price": 12.5,
+          "amount": 6250
+        }
+      ],
+      "amount": 6250,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1004",
+      "total": 6250,
+      "orderDate": "2026-09-25"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1005",
+      "vendorId": "V-001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-28",
+      "expectedDate": "2026-10-15",
+      "items": [
+        {
+          "item": "Steel Tube 50mm",
+          "qty": 1000,
+          "uom": "m",
+          "price": 3,
+          "amount": 3000
+        }
+      ],
+      "amount": 3000,
+      "warehouse": "WH-RAW",
+      "status": "Draft",
+      "orderNumber": "PO-26-1005",
+      "total": 3000,
+      "orderDate": "2026-09-28"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1006",
+      "vendorId": "V-005",
+      "vendorName": "Industrial Chem Ltd",
+      "date": "2026-09-29",
+      "expectedDate": "2026-10-05",
+      "items": [
+        {
+          "item": "Industrial Lubricant",
+          "qty": 200,
+          "uom": "L",
+          "price": 8,
+          "amount": 1600
+        }
+      ],
+      "amount": 1600,
+      "warehouse": "WH-CHEM",
+      "status": "Pending Approval",
+      "orderNumber": "PO-26-1006",
+      "total": 1600,
+      "orderDate": "2026-09-29"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1007",
+      "vendorId": "V-002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-10-01",
+      "expectedDate": "2026-10-20",
+      "items": [
+        {
+          "item": "PVC Resin",
+          "qty": 8000,
+          "uom": "kg",
+          "price": 0.9,
+          "amount": 7200
+        }
+      ],
+      "amount": 7200,
+      "warehouse": "WH-RAW",
+      "status": "Draft",
+      "orderNumber": "PO-26-1007",
+      "total": 7200,
+      "orderDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1008",
+      "vendorId": "V-006",
+      "vendorName": "Packaging Pros",
+      "date": "2026-10-01",
+      "expectedDate": "2026-10-08",
+      "items": [
+        {
+          "item": "Cardboard Boxes Large",
+          "qty": 5000,
+          "uom": "pcs",
+          "price": 0.2,
+          "amount": 1000
+        }
+      ],
+      "amount": 1000,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1008",
+      "total": 1000,
+      "orderDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1009",
+      "vendorId": "V-007",
+      "vendorName": "Safety Gear Co",
+      "date": "2026-10-02",
+      "expectedDate": "2026-10-06",
+      "items": [
+        {
+          "item": "Safety Gloves",
+          "qty": 200,
+          "uom": "pairs",
+          "price": 2.5,
+          "amount": 500
+        }
+      ],
+      "amount": 500,
+      "warehouse": "WH-MAIN",
+      "status": "Draft",
+      "orderNumber": "PO-26-1009",
+      "total": 500,
+      "orderDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PO-26-1010",
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-10-02",
+      "expectedDate": "2026-10-25",
+      "items": [
+        {
+          "item": "LED Displays",
+          "qty": 1000,
+          "uom": "pcs",
+          "price": 4.5,
+          "amount": 4500
+        }
+      ],
+      "amount": 4500,
+      "warehouse": "WH-MAIN",
+      "status": "Draft",
+      "orderNumber": "PO-26-1010",
+      "total": 4500,
+      "orderDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1001-C-002",
+      "vendorId": "V-001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-15",
+      "expectedDate": "2026-09-25",
+      "items": [
+        {
+          "item": "Steel Sheet 3mm",
+          "qty": 2000,
+          "uom": "kg",
+          "price": 1.2,
+          "amount": 2400
+        }
+      ],
+      "amount": 2400,
+      "warehouse": "WH-RAW",
+      "status": "Received",
+      "orderNumber": "PO-26-1001-C-002",
+      "total": 2400,
+      "orderDate": "2026-09-15"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1002-C-002",
+      "vendorId": "V-002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-09-18",
+      "expectedDate": "2026-09-28",
+      "items": [
+        {
+          "item": "HDPE Granules",
+          "qty": 5000,
+          "uom": "kg",
+          "price": 0.8,
+          "amount": 4000
+        }
+      ],
+      "amount": 4000,
+      "warehouse": "WH-RAW",
+      "status": "Received",
+      "orderNumber": "PO-26-1002-C-002",
+      "total": 4000,
+      "orderDate": "2026-09-18"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1003-C-002",
+      "vendorId": "V-003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-09-22",
+      "expectedDate": "2026-10-02",
+      "items": [
+        {
+          "item": "M8 Hex Bolts",
+          "qty": 10000,
+          "uom": "pcs",
+          "price": 0.05,
+          "amount": 500
+        }
+      ],
+      "amount": 500,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1003-C-002",
+      "total": 500,
+      "orderDate": "2026-09-22"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1004-C-002",
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-09-25",
+      "expectedDate": "2026-10-10",
+      "items": [
+        {
+          "item": "Circuit Boards v2",
+          "qty": 500,
+          "uom": "pcs",
+          "price": 12.5,
+          "amount": 6250
+        }
+      ],
+      "amount": 6250,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1004-C-002",
+      "total": 6250,
+      "orderDate": "2026-09-25"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1005-C-002",
+      "vendorId": "V-001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-28",
+      "expectedDate": "2026-10-15",
+      "items": [
+        {
+          "item": "Steel Tube 50mm",
+          "qty": 1000,
+          "uom": "m",
+          "price": 3,
+          "amount": 3000
+        }
+      ],
+      "amount": 3000,
+      "warehouse": "WH-RAW",
+      "status": "Draft",
+      "orderNumber": "PO-26-1005-C-002",
+      "total": 3000,
+      "orderDate": "2026-09-28"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1006-C-002",
+      "vendorId": "V-005",
+      "vendorName": "Industrial Chem Ltd",
+      "date": "2026-09-29",
+      "expectedDate": "2026-10-05",
+      "items": [
+        {
+          "item": "Industrial Lubricant",
+          "qty": 200,
+          "uom": "L",
+          "price": 8,
+          "amount": 1600
+        }
+      ],
+      "amount": 1600,
+      "warehouse": "WH-CHEM",
+      "status": "Pending Approval",
+      "orderNumber": "PO-26-1006-C-002",
+      "total": 1600,
+      "orderDate": "2026-09-29"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1007-C-002",
+      "vendorId": "V-002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-10-01",
+      "expectedDate": "2026-10-20",
+      "items": [
+        {
+          "item": "PVC Resin",
+          "qty": 8000,
+          "uom": "kg",
+          "price": 0.9,
+          "amount": 7200
+        }
+      ],
+      "amount": 7200,
+      "warehouse": "WH-RAW",
+      "status": "Draft",
+      "orderNumber": "PO-26-1007-C-002",
+      "total": 7200,
+      "orderDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1008-C-002",
+      "vendorId": "V-006",
+      "vendorName": "Packaging Pros",
+      "date": "2026-10-01",
+      "expectedDate": "2026-10-08",
+      "items": [
+        {
+          "item": "Cardboard Boxes Large",
+          "qty": 5000,
+          "uom": "pcs",
+          "price": 0.2,
+          "amount": 1000
+        }
+      ],
+      "amount": 1000,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1008-C-002",
+      "total": 1000,
+      "orderDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1009-C-002",
+      "vendorId": "V-007",
+      "vendorName": "Safety Gear Co",
+      "date": "2026-10-02",
+      "expectedDate": "2026-10-06",
+      "items": [
+        {
+          "item": "Safety Gloves",
+          "qty": 200,
+          "uom": "pairs",
+          "price": 2.5,
+          "amount": 500
+        }
+      ],
+      "amount": 500,
+      "warehouse": "WH-MAIN",
+      "status": "Draft",
+      "orderNumber": "PO-26-1009-C-002",
+      "total": 500,
+      "orderDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-002",
+      "id": "PO-26-1010-C-002",
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-10-02",
+      "expectedDate": "2026-10-25",
+      "items": [
+        {
+          "item": "LED Displays",
+          "qty": 1000,
+          "uom": "pcs",
+          "price": 4.5,
+          "amount": 4500
+        }
+      ],
+      "amount": 4500,
+      "warehouse": "WH-MAIN",
+      "status": "Draft",
+      "orderNumber": "PO-26-1010-C-002",
+      "total": 4500,
+      "orderDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1001-C-003",
+      "vendorId": "V-001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-15",
+      "expectedDate": "2026-09-25",
+      "items": [
+        {
+          "item": "Steel Sheet 3mm",
+          "qty": 2000,
+          "uom": "kg",
+          "price": 1.2,
+          "amount": 2400
+        }
+      ],
+      "amount": 2400,
+      "warehouse": "WH-RAW",
+      "status": "Received",
+      "orderNumber": "PO-26-1001-C-003",
+      "total": 2400,
+      "orderDate": "2026-09-15"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1002-C-003",
+      "vendorId": "V-002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-09-18",
+      "expectedDate": "2026-09-28",
+      "items": [
+        {
+          "item": "HDPE Granules",
+          "qty": 5000,
+          "uom": "kg",
+          "price": 0.8,
+          "amount": 4000
+        }
+      ],
+      "amount": 4000,
+      "warehouse": "WH-RAW",
+      "status": "Received",
+      "orderNumber": "PO-26-1002-C-003",
+      "total": 4000,
+      "orderDate": "2026-09-18"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1003-C-003",
+      "vendorId": "V-003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-09-22",
+      "expectedDate": "2026-10-02",
+      "items": [
+        {
+          "item": "M8 Hex Bolts",
+          "qty": 10000,
+          "uom": "pcs",
+          "price": 0.05,
+          "amount": 500
+        }
+      ],
+      "amount": 500,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1003-C-003",
+      "total": 500,
+      "orderDate": "2026-09-22"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1004-C-003",
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-09-25",
+      "expectedDate": "2026-10-10",
+      "items": [
+        {
+          "item": "Circuit Boards v2",
+          "qty": 500,
+          "uom": "pcs",
+          "price": 12.5,
+          "amount": 6250
+        }
+      ],
+      "amount": 6250,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1004-C-003",
+      "total": 6250,
+      "orderDate": "2026-09-25"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1005-C-003",
+      "vendorId": "V-001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-28",
+      "expectedDate": "2026-10-15",
+      "items": [
+        {
+          "item": "Steel Tube 50mm",
+          "qty": 1000,
+          "uom": "m",
+          "price": 3,
+          "amount": 3000
+        }
+      ],
+      "amount": 3000,
+      "warehouse": "WH-RAW",
+      "status": "Draft",
+      "orderNumber": "PO-26-1005-C-003",
+      "total": 3000,
+      "orderDate": "2026-09-28"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1006-C-003",
+      "vendorId": "V-005",
+      "vendorName": "Industrial Chem Ltd",
+      "date": "2026-09-29",
+      "expectedDate": "2026-10-05",
+      "items": [
+        {
+          "item": "Industrial Lubricant",
+          "qty": 200,
+          "uom": "L",
+          "price": 8,
+          "amount": 1600
+        }
+      ],
+      "amount": 1600,
+      "warehouse": "WH-CHEM",
+      "status": "Pending Approval",
+      "orderNumber": "PO-26-1006-C-003",
+      "total": 1600,
+      "orderDate": "2026-09-29"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1007-C-003",
+      "vendorId": "V-002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-10-01",
+      "expectedDate": "2026-10-20",
+      "items": [
+        {
+          "item": "PVC Resin",
+          "qty": 8000,
+          "uom": "kg",
+          "price": 0.9,
+          "amount": 7200
+        }
+      ],
+      "amount": 7200,
+      "warehouse": "WH-RAW",
+      "status": "Draft",
+      "orderNumber": "PO-26-1007-C-003",
+      "total": 7200,
+      "orderDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1008-C-003",
+      "vendorId": "V-006",
+      "vendorName": "Packaging Pros",
+      "date": "2026-10-01",
+      "expectedDate": "2026-10-08",
+      "items": [
+        {
+          "item": "Cardboard Boxes Large",
+          "qty": 5000,
+          "uom": "pcs",
+          "price": 0.2,
+          "amount": 1000
+        }
+      ],
+      "amount": 1000,
+      "warehouse": "WH-MAIN",
+      "status": "Released",
+      "orderNumber": "PO-26-1008-C-003",
+      "total": 1000,
+      "orderDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1009-C-003",
+      "vendorId": "V-007",
+      "vendorName": "Safety Gear Co",
+      "date": "2026-10-02",
+      "expectedDate": "2026-10-06",
+      "items": [
+        {
+          "item": "Safety Gloves",
+          "qty": 200,
+          "uom": "pairs",
+          "price": 2.5,
+          "amount": 500
+        }
+      ],
+      "amount": 500,
+      "warehouse": "WH-MAIN",
+      "status": "Draft",
+      "orderNumber": "PO-26-1009-C-003",
+      "total": 500,
+      "orderDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-003",
+      "id": "PO-26-1010-C-003",
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-10-02",
+      "expectedDate": "2026-10-25",
+      "items": [
+        {
+          "item": "LED Displays",
+          "qty": 1000,
+          "uom": "pcs",
+          "price": 4.5,
+          "amount": 4500
+        }
+      ],
+      "amount": 4500,
+      "warehouse": "WH-MAIN",
+      "status": "Draft",
+      "orderNumber": "PO-26-1010-C-003",
+      "total": 4500,
+      "orderDate": "2026-10-02"
+    },
+    {
+      "orderNumber": "PO-DEMO-TEST-1",
+      "vendorName": "Apex Steel Traders",
+      "warehouse": "WH-MAIN",
+      "total": 9999,
+      "status": "Released",
+      "id": "PO-DEMO-TEST-1",
+      "amount": 9999,
+      "orderDate": "2026-10-12",
+      "date": "2026-10-12"
+    },
+    {
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "expectedDate": "2026-10-02",
+      "date": "2026-10-15",
+      "warehouse": "WH-MAIN",
+      "amount": 8,
+      "status": "Draft",
+      "orderNumber": "PO-26-3670",
+      "orderDate": "2026-10-15",
+      "total": 8,
+      "companyId": "C-001",
+      "id": "PO-26-3670"
+    },
+    {
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "expectedDate": "2026-10-02",
+      "date": "2026-10-15",
+      "warehouse": "WH-MAIN",
+      "amount": 8,
+      "status": "Draft",
+      "orderNumber": "PO-26-3670",
+      "orderDate": "2026-10-15",
+      "total": 8,
+      "companyId": "C-001",
+      "id": "PO-26-3670",
+      "createdAt": "2026-10-12T08:42:03.702Z"
+    },
+    {
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-10-09",
+      "expectedDate": "2026-10-01",
+      "status": "Submitted",
+      "amount": 88,
+      "warehouse": "WH-CHEM",
+      "orderNumber": "PO-26-9058",
+      "orderDate": "2026-10-09",
+      "total": 88,
+      "companyId": "C-001",
+      "id": "PO-26-9058"
+    },
+    {
+      "vendorId": "V-004",
+      "vendorName": "ElectroComponents Inc",
+      "date": "2026-10-09",
+      "expectedDate": "2026-10-01",
+      "status": "Submitted",
+      "amount": 88,
+      "warehouse": "WH-CHEM",
+      "orderNumber": "PO-26-9058",
+      "orderDate": "2026-10-09",
+      "total": 88,
+      "companyId": "C-001",
+      "id": "PO-26-9058",
+      "createdAt": "2026-10-12T08:42:29.076Z"
+    },
+    {
+      "vendorId": "V-003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-10-17",
+      "expectedDate": "2026-10-23",
+      "warehouse": "WH-MAIN",
+      "amount": 555,
+      "status": "Draft",
+      "orderNumber": "PO-26-1390",
+      "orderDate": "2026-10-17",
+      "total": 555,
+      "companyId": "C-001",
+      "id": "PUR-481678",
+      "createdAt": "2026-10-12T10:04:41.673Z"
+    }
+  ],
+  "grns": [
+    {
+      "companyId": "C-001",
+      "id": "GRN-26-0501",
+      "poNumber": "PO-26-1001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-25",
+      "warehouse": "WH-RAW",
+      "bin": "A1",
+      "status": "Completed",
+      "items": [
+        {
+          "item": "Steel Sheet 3mm",
+          "rcvQty": 2000,
+          "rejQty": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "GRN-26-0502",
+      "poNumber": "PO-26-1002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-09-28",
+      "warehouse": "WH-RAW",
+      "bin": "B4",
+      "status": "Completed",
+      "items": [
+        {
+          "item": "HDPE Granules",
+          "rcvQty": 4950,
+          "rejQty": 50
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "GRN-26-0503",
+      "poNumber": "PO-26-1003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-10-02",
+      "warehouse": "WH-MAIN",
+      "bin": "F12",
+      "status": "Draft",
+      "items": [
+        {
+          "item": "M8 Hex Bolts",
+          "rcvQty": 10000,
+          "rejQty": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "GRN-26-0501-C-002",
+      "poNumber": "PO-26-1001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-25",
+      "warehouse": "WH-RAW",
+      "bin": "A1",
+      "status": "Completed",
+      "items": [
+        {
+          "item": "Steel Sheet 3mm",
+          "rcvQty": 2000,
+          "rejQty": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "GRN-26-0502-C-002",
+      "poNumber": "PO-26-1002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-09-28",
+      "warehouse": "WH-RAW",
+      "bin": "B4",
+      "status": "Completed",
+      "items": [
+        {
+          "item": "HDPE Granules",
+          "rcvQty": 4950,
+          "rejQty": 50
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "GRN-26-0503-C-002",
+      "poNumber": "PO-26-1003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-10-02",
+      "warehouse": "WH-MAIN",
+      "bin": "F12",
+      "status": "Draft",
+      "items": [
+        {
+          "item": "M8 Hex Bolts",
+          "rcvQty": 10000,
+          "rejQty": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "GRN-26-0501-C-003",
+      "poNumber": "PO-26-1001",
+      "vendorName": "Apex Steel Traders",
+      "date": "2026-09-25",
+      "warehouse": "WH-RAW",
+      "bin": "A1",
+      "status": "Completed",
+      "items": [
+        {
+          "item": "Steel Sheet 3mm",
+          "rcvQty": 2000,
+          "rejQty": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "GRN-26-0502-C-003",
+      "poNumber": "PO-26-1002",
+      "vendorName": "Polymer Synthetics",
+      "date": "2026-09-28",
+      "warehouse": "WH-RAW",
+      "bin": "B4",
+      "status": "Completed",
+      "items": [
+        {
+          "item": "HDPE Granules",
+          "rcvQty": 4950,
+          "rejQty": 50
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "GRN-26-0503-C-003",
+      "poNumber": "PO-26-1003",
+      "vendorName": "Fasteners Direct",
+      "date": "2026-10-02",
+      "warehouse": "WH-MAIN",
+      "bin": "F12",
+      "status": "Draft",
+      "items": [
+        {
+          "item": "M8 Hex Bolts",
+          "rcvQty": 10000,
+          "rejQty": 0
+        }
+      ]
+    },
+    {
+      "poNumber": "55",
+      "vendorName": "55",
+      "warehouse": "WH-CHEM",
+      "date": "2026-10-03",
+      "bin": "5",
+      "status": "Draft",
+      "id": "GRN-563578",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T08:42:43.579Z"
+    },
+    {
+      "poNumber": "555",
+      "vendorName": "55",
+      "date": "2026-10-02",
+      "warehouse": "WH-CHEM",
+      "bin": "55",
+      "status": "Draft",
+      "id": "GRN-495867",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T10:04:55.862Z"
+    }
+  ],
+  "procQuality": [
+    {
+      "companyId": "C-001",
+      "id": "PQ-26-001",
+      "refId": "GRN-26-0501",
+      "item": "Steel Sheet 3mm",
+      "date": "2026-09-25",
+      "status": "Passed",
+      "qty": 2000
+    },
+    {
+      "companyId": "C-001",
+      "id": "PQ-26-002",
+      "refId": "GRN-26-0502",
+      "item": "HDPE Granules",
+      "date": "2026-09-28",
+      "status": "Rejected",
+      "qty": 50
+    },
+    {
+      "companyId": "C-001",
+      "id": "PQ-26-003",
+      "refId": "GRN-26-0503",
+      "item": "M8 Hex Bolts",
+      "date": "2026-10-02",
+      "status": "Pending",
+      "qty": 10000
+    }
+  ],
+  "boms": [
+    {
+      "companyId": "C-001",
+      "id": "BOM-100",
+      "code": "BOM-100",
+      "parentItem": "Heavy Duty Pump Component",
+      "revision": "1.0",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "Steel Sheet 3mm",
+          "desc": "Housing Material",
+          "qty": 5,
+          "uom": "kg",
+          "scrap": 2
+        },
+        {
+          "line": 2,
+          "item": "M8 Hex Bolts",
+          "desc": "Fasteners",
+          "qty": 12,
+          "uom": "pcs",
+          "scrap": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "BOM-101",
+      "code": "BOM-101",
+      "parentItem": "Electronic Control Unit",
+      "revision": "2.1",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "Circuit Boards v2",
+          "desc": "Main PCB",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 0
+        },
+        {
+          "line": 2,
+          "item": "LED Displays",
+          "desc": "Display Panel",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 0
+        },
+        {
+          "line": 3,
+          "item": "Plastic Casing",
+          "desc": "Housing",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 1
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "BOM-102",
+      "code": "BOM-102",
+      "parentItem": "Plastic Gear Assembly",
+      "revision": "1.0",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "HDPE Granules",
+          "desc": "Raw Material",
+          "qty": 0.5,
+          "uom": "kg",
+          "scrap": 5
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "BOM-103",
+      "code": "BOM-103",
+      "parentItem": "Industrial Fan Blade",
+      "revision": "1.2",
+      "status": "Draft",
+      "components": [
+        {
+          "line": 1,
+          "item": "Aluminum Sheet 2mm",
+          "desc": "Blade Material",
+          "qty": 1.5,
+          "uom": "kg",
+          "scrap": 10
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "BOM-100-C-002",
+      "code": "BOM-100-C-002",
+      "parentItem": "Heavy Duty Pump Component",
+      "revision": "1.0",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "Steel Sheet 3mm",
+          "desc": "Housing Material",
+          "qty": 5,
+          "uom": "kg",
+          "scrap": 2
+        },
+        {
+          "line": 2,
+          "item": "M8 Hex Bolts",
+          "desc": "Fasteners",
+          "qty": 12,
+          "uom": "pcs",
+          "scrap": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "BOM-101-C-002",
+      "code": "BOM-101-C-002",
+      "parentItem": "Electronic Control Unit",
+      "revision": "2.1",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "Circuit Boards v2",
+          "desc": "Main PCB",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 0
+        },
+        {
+          "line": 2,
+          "item": "LED Displays",
+          "desc": "Display Panel",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 0
+        },
+        {
+          "line": 3,
+          "item": "Plastic Casing",
+          "desc": "Housing",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 1
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "BOM-102-C-002",
+      "code": "BOM-102-C-002",
+      "parentItem": "Plastic Gear Assembly",
+      "revision": "1.0",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "HDPE Granules",
+          "desc": "Raw Material",
+          "qty": 0.5,
+          "uom": "kg",
+          "scrap": 5
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "BOM-103-C-002",
+      "code": "BOM-103-C-002",
+      "parentItem": "Industrial Fan Blade",
+      "revision": "1.2",
+      "status": "Draft",
+      "components": [
+        {
+          "line": 1,
+          "item": "Aluminum Sheet 2mm",
+          "desc": "Blade Material",
+          "qty": 1.5,
+          "uom": "kg",
+          "scrap": 10
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "BOM-100-C-003",
+      "code": "BOM-100-C-003",
+      "parentItem": "Heavy Duty Pump Component",
+      "revision": "1.0",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "Steel Sheet 3mm",
+          "desc": "Housing Material",
+          "qty": 5,
+          "uom": "kg",
+          "scrap": 2
+        },
+        {
+          "line": 2,
+          "item": "M8 Hex Bolts",
+          "desc": "Fasteners",
+          "qty": 12,
+          "uom": "pcs",
+          "scrap": 0
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "BOM-101-C-003",
+      "code": "BOM-101-C-003",
+      "parentItem": "Electronic Control Unit",
+      "revision": "2.1",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "Circuit Boards v2",
+          "desc": "Main PCB",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 0
+        },
+        {
+          "line": 2,
+          "item": "LED Displays",
+          "desc": "Display Panel",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 0
+        },
+        {
+          "line": 3,
+          "item": "Plastic Casing",
+          "desc": "Housing",
+          "qty": 1,
+          "uom": "pcs",
+          "scrap": 1
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "BOM-102-C-003",
+      "code": "BOM-102-C-003",
+      "parentItem": "Plastic Gear Assembly",
+      "revision": "1.0",
+      "status": "Approved",
+      "components": [
+        {
+          "line": 1,
+          "item": "HDPE Granules",
+          "desc": "Raw Material",
+          "qty": 0.5,
+          "uom": "kg",
+          "scrap": 5
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "BOM-103-C-003",
+      "code": "BOM-103-C-003",
+      "parentItem": "Industrial Fan Blade",
+      "revision": "1.2",
+      "status": "Draft",
+      "components": [
+        {
+          "line": 1,
+          "item": "Aluminum Sheet 2mm",
+          "desc": "Blade Material",
+          "qty": 1.5,
+          "uom": "kg",
+          "scrap": 10
+        }
+      ]
+    }
+  ],
+  "routings": [
+    {
+      "companyId": "C-001",
+      "id": "RT-100",
+      "code": "RT-100",
+      "parentItem": "Heavy Duty Pump Component",
+      "revision": "1.0",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "Laser Cutting",
+          "wc": "WC-LASER",
+          "setup": 1,
+          "run": 0.05
+        },
+        {
+          "op": 20,
+          "desc": "Bending",
+          "wc": "WC-PRESS",
+          "setup": 0.5,
+          "run": 0.02
+        },
+        {
+          "op": 30,
+          "desc": "Assembly",
+          "wc": "WC-ASSM",
+          "setup": 0.2,
+          "run": 0.1
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "RT-101",
+      "code": "RT-101",
+      "parentItem": "Electronic Control Unit",
+      "revision": "2.1",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "SMT Assembly",
+          "wc": "WC-SMT",
+          "setup": 2,
+          "run": 0.01
+        },
+        {
+          "op": 20,
+          "desc": "Testing",
+          "wc": "WC-TEST",
+          "setup": 0.1,
+          "run": 0.05
+        },
+        {
+          "op": 30,
+          "desc": "Packaging",
+          "wc": "WC-PACK",
+          "setup": 0.1,
+          "run": 0.02
+        }
+      ]
+    },
+    {
+      "companyId": "C-001",
+      "id": "RT-102",
+      "code": "RT-102",
+      "parentItem": "Plastic Gear Assembly",
+      "revision": "1.0",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "Injection Molding",
+          "wc": "WC-MOLD",
+          "setup": 1.5,
+          "run": 0.005
+        },
+        {
+          "op": 20,
+          "desc": "Trimming",
+          "wc": "WC-TRIM",
+          "setup": 0.1,
+          "run": 0.01
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "RT-100-C-002",
+      "code": "RT-100-C-002",
+      "parentItem": "Heavy Duty Pump Component",
+      "revision": "1.0",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "Laser Cutting",
+          "wc": "WC-LASER",
+          "setup": 1,
+          "run": 0.05
+        },
+        {
+          "op": 20,
+          "desc": "Bending",
+          "wc": "WC-PRESS",
+          "setup": 0.5,
+          "run": 0.02
+        },
+        {
+          "op": 30,
+          "desc": "Assembly",
+          "wc": "WC-ASSM",
+          "setup": 0.2,
+          "run": 0.1
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "RT-101-C-002",
+      "code": "RT-101-C-002",
+      "parentItem": "Electronic Control Unit",
+      "revision": "2.1",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "SMT Assembly",
+          "wc": "WC-SMT",
+          "setup": 2,
+          "run": 0.01
+        },
+        {
+          "op": 20,
+          "desc": "Testing",
+          "wc": "WC-TEST",
+          "setup": 0.1,
+          "run": 0.05
+        },
+        {
+          "op": 30,
+          "desc": "Packaging",
+          "wc": "WC-PACK",
+          "setup": 0.1,
+          "run": 0.02
+        }
+      ]
+    },
+    {
+      "companyId": "C-002",
+      "id": "RT-102-C-002",
+      "code": "RT-102-C-002",
+      "parentItem": "Plastic Gear Assembly",
+      "revision": "1.0",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "Injection Molding",
+          "wc": "WC-MOLD",
+          "setup": 1.5,
+          "run": 0.005
+        },
+        {
+          "op": 20,
+          "desc": "Trimming",
+          "wc": "WC-TRIM",
+          "setup": 0.1,
+          "run": 0.01
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "RT-100-C-003",
+      "code": "RT-100-C-003",
+      "parentItem": "Heavy Duty Pump Component",
+      "revision": "1.0",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "Laser Cutting",
+          "wc": "WC-LASER",
+          "setup": 1,
+          "run": 0.05
+        },
+        {
+          "op": 20,
+          "desc": "Bending",
+          "wc": "WC-PRESS",
+          "setup": 0.5,
+          "run": 0.02
+        },
+        {
+          "op": 30,
+          "desc": "Assembly",
+          "wc": "WC-ASSM",
+          "setup": 0.2,
+          "run": 0.1
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "RT-101-C-003",
+      "code": "RT-101-C-003",
+      "parentItem": "Electronic Control Unit",
+      "revision": "2.1",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "SMT Assembly",
+          "wc": "WC-SMT",
+          "setup": 2,
+          "run": 0.01
+        },
+        {
+          "op": 20,
+          "desc": "Testing",
+          "wc": "WC-TEST",
+          "setup": 0.1,
+          "run": 0.05
+        },
+        {
+          "op": 30,
+          "desc": "Packaging",
+          "wc": "WC-PACK",
+          "setup": 0.1,
+          "run": 0.02
+        }
+      ]
+    },
+    {
+      "companyId": "C-003",
+      "id": "RT-102-C-003",
+      "code": "RT-102-C-003",
+      "parentItem": "Plastic Gear Assembly",
+      "revision": "1.0",
+      "status": "Approved",
+      "operations": [
+        {
+          "op": 10,
+          "desc": "Injection Molding",
+          "wc": "WC-MOLD",
+          "setup": 1.5,
+          "run": 0.005
+        },
+        {
+          "op": 20,
+          "desc": "Trimming",
+          "wc": "WC-TRIM",
+          "setup": 0.1,
+          "run": 0.01
+        }
+      ]
+    }
+  ],
+  "productionOrders": [
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1001",
+      "item": "Heavy Duty Pump Component",
+      "qty": 200,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-09-28",
+      "dueDate": "2026-10-05",
+      "status": "Completed",
+      "progress": 100
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1002",
+      "item": "Electronic Control Unit",
+      "qty": 500,
+      "bom": "BOM-101",
+      "routing": "RT-101",
+      "plant": "Plant-Electronics",
+      "startDate": "2026-10-01",
+      "dueDate": "2026-10-10",
+      "status": "Released",
+      "progress": 45
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1003",
+      "item": "Plastic Gear Assembly",
+      "qty": 5000,
+      "bom": "BOM-102",
+      "routing": "RT-102",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-02",
+      "dueDate": "2026-10-08",
+      "status": "Released",
+      "progress": 10
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1004",
+      "item": "Heavy Duty Pump Component",
+      "qty": 150,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-05",
+      "dueDate": "2026-10-12",
+      "status": "Planned",
+      "progress": 0
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1005",
+      "item": "Industrial Fan Blade",
+      "qty": 1000,
+      "bom": "BOM-103",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-15",
+      "status": "Planned",
+      "progress": 0
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1006",
+      "item": "Electronic Control Unit",
+      "qty": 200,
+      "bom": "BOM-101",
+      "routing": "RT-101",
+      "plant": "Plant-Electronics",
+      "startDate": "2026-10-10",
+      "dueDate": "2026-10-15",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1007",
+      "item": "Plastic Gear Assembly",
+      "qty": 10000,
+      "bom": "BOM-102",
+      "routing": "RT-102",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-12",
+      "dueDate": "2026-10-20",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-001",
+      "id": "MFG-26-1008",
+      "item": "Heavy Duty Pump Component",
+      "qty": 50,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-15",
+      "dueDate": "2026-10-22",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1001-C-002",
+      "item": "Heavy Duty Pump Component",
+      "qty": 200,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-09-28",
+      "dueDate": "2026-10-05",
+      "status": "Completed",
+      "progress": 100
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1002-C-002",
+      "item": "Electronic Control Unit",
+      "qty": 500,
+      "bom": "BOM-101",
+      "routing": "RT-101",
+      "plant": "Plant-Electronics",
+      "startDate": "2026-10-01",
+      "dueDate": "2026-10-10",
+      "status": "Released",
+      "progress": 45
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1003-C-002",
+      "item": "Plastic Gear Assembly",
+      "qty": 5000,
+      "bom": "BOM-102",
+      "routing": "RT-102",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-02",
+      "dueDate": "2026-10-08",
+      "status": "Released",
+      "progress": 10
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1004-C-002",
+      "item": "Heavy Duty Pump Component",
+      "qty": 150,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-05",
+      "dueDate": "2026-10-12",
+      "status": "Planned",
+      "progress": 0
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1005-C-002",
+      "item": "Industrial Fan Blade",
+      "qty": 1000,
+      "bom": "BOM-103",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-15",
+      "status": "Planned",
+      "progress": 0
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1006-C-002",
+      "item": "Electronic Control Unit",
+      "qty": 200,
+      "bom": "BOM-101",
+      "routing": "RT-101",
+      "plant": "Plant-Electronics",
+      "startDate": "2026-10-10",
+      "dueDate": "2026-10-15",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1007-C-002",
+      "item": "Plastic Gear Assembly",
+      "qty": 10000,
+      "bom": "BOM-102",
+      "routing": "RT-102",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-12",
+      "dueDate": "2026-10-20",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-002",
+      "id": "MFG-26-1008-C-002",
+      "item": "Heavy Duty Pump Component",
+      "qty": 50,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-15",
+      "dueDate": "2026-10-22",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1001-C-003",
+      "item": "Heavy Duty Pump Component",
+      "qty": 200,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-09-28",
+      "dueDate": "2026-10-05",
+      "status": "Completed",
+      "progress": 100
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1002-C-003",
+      "item": "Electronic Control Unit",
+      "qty": 500,
+      "bom": "BOM-101",
+      "routing": "RT-101",
+      "plant": "Plant-Electronics",
+      "startDate": "2026-10-01",
+      "dueDate": "2026-10-10",
+      "status": "Released",
+      "progress": 45
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1003-C-003",
+      "item": "Plastic Gear Assembly",
+      "qty": 5000,
+      "bom": "BOM-102",
+      "routing": "RT-102",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-02",
+      "dueDate": "2026-10-08",
+      "status": "Released",
+      "progress": 10
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1004-C-003",
+      "item": "Heavy Duty Pump Component",
+      "qty": 150,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-05",
+      "dueDate": "2026-10-12",
+      "status": "Planned",
+      "progress": 0
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1005-C-003",
+      "item": "Industrial Fan Blade",
+      "qty": 1000,
+      "bom": "BOM-103",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-15",
+      "status": "Planned",
+      "progress": 0
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1006-C-003",
+      "item": "Electronic Control Unit",
+      "qty": 200,
+      "bom": "BOM-101",
+      "routing": "RT-101",
+      "plant": "Plant-Electronics",
+      "startDate": "2026-10-10",
+      "dueDate": "2026-10-15",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1007-C-003",
+      "item": "Plastic Gear Assembly",
+      "qty": 10000,
+      "bom": "BOM-102",
+      "routing": "RT-102",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-12",
+      "dueDate": "2026-10-20",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "companyId": "C-003",
+      "id": "MFG-26-1008-C-003",
+      "item": "Heavy Duty Pump Component",
+      "qty": 50,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-15",
+      "dueDate": "2026-10-22",
+      "status": "Draft",
+      "progress": 0
+    },
+    {
+      "id": "PLN-26-3995",
+      "item": "Heavy Duty Pump Component",
+      "qty": 150,
+      "bom": "BOM-100",
+      "routing": "RT-100",
+      "plant": "Plant-Main",
+      "startDate": "2026-10-12",
+      "dueDate": "2026-10-19",
+      "status": "Planned",
+      "progress": 0,
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T09:35:31.874Z"
+    },
+    {
+      "id": "PLN-26-7351",
+      "item": "h",
+      "qty": 55,
+      "bom": "4",
+      "routing": "4",
+      "plant": "Plant-Molding",
+      "startDate": "2026-10-12",
+      "dueDate": "2026-11-07",
+      "status": "Planned",
+      "progress": 0,
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T09:46:53.546Z"
+    }
+  ],
+  "materialTransactions": [],
+  "operations": [
+    {
+      "companyId": "C-001",
+      "id": "OP-26-5001",
+      "prodOrder": "MFG-26-1002",
+      "op": 10,
+      "wc": "WC-SMT",
+      "operator": "EMP-001",
+      "status": "Completed",
+      "startedAt": "2026-10-01T08:00",
+      "plannedQty": 500,
+      "goodQty": 500,
+      "scrapQty": 0
+    },
+    {
+      "companyId": "C-001",
+      "id": "OP-26-5002",
+      "prodOrder": "MFG-26-1002",
+      "op": 20,
+      "wc": "WC-TEST",
+      "operator": "EMP-002",
+      "status": "Started",
+      "startedAt": "2026-10-02T09:30",
+      "plannedQty": 500,
+      "goodQty": 220,
+      "scrapQty": 5
+    },
+    {
+      "companyId": "C-001",
+      "id": "OP-26-5003",
+      "prodOrder": "MFG-26-1003",
+      "op": 10,
+      "wc": "WC-MOLD",
+      "operator": "EMP-006",
+      "status": "Started",
+      "startedAt": "2026-10-02T10:00",
+      "plannedQty": 5000,
+      "goodQty": 500,
+      "scrapQty": 10
+    },
+    {
+      "companyId": "C-001",
+      "id": "OP-26-5004",
+      "prodOrder": "MFG-26-1004",
+      "op": 10,
+      "wc": "WC-LASER",
+      "operator": "EMP-009",
+      "status": "Pending",
+      "startedAt": null,
+      "plannedQty": 150,
+      "goodQty": 0,
+      "scrapQty": 0
+    }
+  ],
+  "receipts": [],
+  "inspections": [
+    {
+      "companyId": "C-001",
+      "id": "INSP-26-001",
+      "type": "In-Process",
+      "item": "Electronic Control Unit",
+      "source": "MFG-26-1002",
+      "qty": 220,
+      "status": "In Progress"
+    },
+    {
+      "companyId": "C-001",
+      "id": "INSP-26-002",
+      "type": "Final",
+      "item": "Heavy Duty Pump Component",
+      "source": "MFG-26-1001",
+      "qty": 200,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-001",
+      "id": "INSP-26-003",
+      "type": "In-Process",
+      "item": "Plastic Gear Assembly",
+      "source": "MFG-26-1003",
+      "qty": 500,
+      "status": "Pending"
+    },
+    {
+      "companyId": "C-001",
+      "id": "INSP-26-004",
+      "type": "Receiving",
+      "item": "Steel Sheet 3mm",
+      "source": "GRN-26-0501",
+      "qty": 2000,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-001",
+      "id": "INSP-26-005",
+      "type": "Receiving",
+      "item": "HDPE Granules",
+      "source": "GRN-26-0502",
+      "qty": 5000,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-001",
+      "id": "INSP-26-006",
+      "type": "Receiving",
+      "item": "M8 Hex Bolts",
+      "source": "GRN-26-0503",
+      "qty": 10000,
+      "status": "Pending"
+    },
+    {
+      "companyId": "C-002",
+      "id": "INSP-26-001-C-002",
+      "type": "In-Process",
+      "item": "Electronic Control Unit",
+      "source": "MFG-26-1002",
+      "qty": 220,
+      "status": "In Progress"
+    },
+    {
+      "companyId": "C-002",
+      "id": "INSP-26-002-C-002",
+      "type": "Final",
+      "item": "Heavy Duty Pump Component",
+      "source": "MFG-26-1001",
+      "qty": 200,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-002",
+      "id": "INSP-26-003-C-002",
+      "type": "In-Process",
+      "item": "Plastic Gear Assembly",
+      "source": "MFG-26-1003",
+      "qty": 500,
+      "status": "Pending"
+    },
+    {
+      "companyId": "C-002",
+      "id": "INSP-26-004-C-002",
+      "type": "Receiving",
+      "item": "Steel Sheet 3mm",
+      "source": "GRN-26-0501",
+      "qty": 2000,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-002",
+      "id": "INSP-26-005-C-002",
+      "type": "Receiving",
+      "item": "HDPE Granules",
+      "source": "GRN-26-0502",
+      "qty": 5000,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-002",
+      "id": "INSP-26-006-C-002",
+      "type": "Receiving",
+      "item": "M8 Hex Bolts",
+      "source": "GRN-26-0503",
+      "qty": 10000,
+      "status": "Pending"
+    },
+    {
+      "companyId": "C-003",
+      "id": "INSP-26-001-C-003",
+      "type": "In-Process",
+      "item": "Electronic Control Unit",
+      "source": "MFG-26-1002",
+      "qty": 220,
+      "status": "In Progress"
+    },
+    {
+      "companyId": "C-003",
+      "id": "INSP-26-002-C-003",
+      "type": "Final",
+      "item": "Heavy Duty Pump Component",
+      "source": "MFG-26-1001",
+      "qty": 200,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-003",
+      "id": "INSP-26-003-C-003",
+      "type": "In-Process",
+      "item": "Plastic Gear Assembly",
+      "source": "MFG-26-1003",
+      "qty": 500,
+      "status": "Pending"
+    },
+    {
+      "companyId": "C-003",
+      "id": "INSP-26-004-C-003",
+      "type": "Receiving",
+      "item": "Steel Sheet 3mm",
+      "source": "GRN-26-0501",
+      "qty": 2000,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-003",
+      "id": "INSP-26-005-C-003",
+      "type": "Receiving",
+      "item": "HDPE Granules",
+      "source": "GRN-26-0502",
+      "qty": 5000,
+      "status": "Completed"
+    },
+    {
+      "companyId": "C-003",
+      "id": "INSP-26-006-C-003",
+      "type": "Receiving",
+      "item": "M8 Hex Bolts",
+      "source": "GRN-26-0503",
+      "qty": 10000,
+      "status": "Pending"
+    }
+  ],
+  "ncrs": [
+    {
+      "companyId": "C-001",
+      "id": "NCR-26-001",
+      "source": "INSP-26-005",
+      "item": "HDPE Granules",
+      "severity": "Medium",
+      "status": "Open",
+      "owner": "Quality Team"
+    },
+    {
+      "companyId": "C-001",
+      "id": "NCR-26-002",
+      "source": "INSP-26-001",
+      "item": "Electronic Control Unit",
+      "severity": "Low",
+      "status": "Under Review",
+      "owner": "Jane Smith"
+    },
+    {
+      "companyId": "C-001",
+      "id": "NCR-26-003",
+      "source": "INSP-26-002",
+      "item": "Heavy Duty Pump Component",
+      "severity": "High",
+      "status": "Closed",
+      "owner": "Quality Team"
+    },
+    {
+      "companyId": "C-002",
+      "id": "NCR-26-001-C-002",
+      "source": "INSP-26-005",
+      "item": "HDPE Granules",
+      "severity": "Medium",
+      "status": "Open",
+      "owner": "Quality Team"
+    },
+    {
+      "companyId": "C-002",
+      "id": "NCR-26-002-C-002",
+      "source": "INSP-26-001",
+      "item": "Electronic Control Unit",
+      "severity": "Low",
+      "status": "Under Review",
+      "owner": "Jane Smith"
+    },
+    {
+      "companyId": "C-002",
+      "id": "NCR-26-003-C-002",
+      "source": "INSP-26-002",
+      "item": "Heavy Duty Pump Component",
+      "severity": "High",
+      "status": "Closed",
+      "owner": "Quality Team"
+    },
+    {
+      "companyId": "C-003",
+      "id": "NCR-26-001-C-003",
+      "source": "INSP-26-005",
+      "item": "HDPE Granules",
+      "severity": "Medium",
+      "status": "Open",
+      "owner": "Quality Team"
+    },
+    {
+      "companyId": "C-003",
+      "id": "NCR-26-002-C-003",
+      "source": "INSP-26-001",
+      "item": "Electronic Control Unit",
+      "severity": "Low",
+      "status": "Under Review",
+      "owner": "Jane Smith"
+    },
+    {
+      "companyId": "C-003",
+      "id": "NCR-26-003-C-003",
+      "source": "INSP-26-002",
+      "item": "Heavy Duty Pump Component",
+      "severity": "High",
+      "status": "Closed",
+      "owner": "Quality Team"
+    }
+  ],
+  "workOrders": [
+    {
+      "companyId": "C-001",
+      "id": "WO-26-001",
+      "asset": "CNC Machine A1",
+      "type": "Preventive",
+      "priority": "High",
+      "tech": "Robert Johnson",
+      "status": "In Progress",
+      "plannedDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-001",
+      "id": "WO-26-002",
+      "asset": "Laser Cutter M1",
+      "type": "Corrective",
+      "priority": "Critical",
+      "tech": "Robert Johnson",
+      "status": "Released",
+      "plannedDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-001",
+      "id": "WO-26-003",
+      "asset": "Injection Molder X",
+      "type": "Preventive",
+      "priority": "Medium",
+      "tech": "EMP-003",
+      "status": "Planned",
+      "plannedDate": "2026-10-15"
+    },
+    {
+      "companyId": "C-001",
+      "id": "WO-26-004",
+      "asset": "SMT Line 1",
+      "type": "Calibration",
+      "priority": "Low",
+      "tech": "EMP-003",
+      "status": "Planned",
+      "plannedDate": "2026-10-20"
+    },
+    {
+      "companyId": "C-001",
+      "id": "WO-26-005",
+      "asset": "Forklift F-02",
+      "type": "Breakdown",
+      "priority": "High",
+      "tech": "External Service",
+      "status": "Open",
+      "plannedDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WO-26-001-C-002",
+      "asset": "CNC Machine A1",
+      "type": "Preventive",
+      "priority": "High",
+      "tech": "Robert Johnson",
+      "status": "In Progress",
+      "plannedDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WO-26-002-C-002",
+      "asset": "Laser Cutter M1",
+      "type": "Corrective",
+      "priority": "Critical",
+      "tech": "Robert Johnson",
+      "status": "Released",
+      "plannedDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WO-26-003-C-002",
+      "asset": "Injection Molder X",
+      "type": "Preventive",
+      "priority": "Medium",
+      "tech": "EMP-003",
+      "status": "Planned",
+      "plannedDate": "2026-10-15"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WO-26-004-C-002",
+      "asset": "SMT Line 1",
+      "type": "Calibration",
+      "priority": "Low",
+      "tech": "EMP-003",
+      "status": "Planned",
+      "plannedDate": "2026-10-20"
+    },
+    {
+      "companyId": "C-002",
+      "id": "WO-26-005-C-002",
+      "asset": "Forklift F-02",
+      "type": "Breakdown",
+      "priority": "High",
+      "tech": "External Service",
+      "status": "Open",
+      "plannedDate": "2026-10-01"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WO-26-001-C-003",
+      "asset": "CNC Machine A1",
+      "type": "Preventive",
+      "priority": "High",
+      "tech": "Robert Johnson",
+      "status": "In Progress",
+      "plannedDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WO-26-002-C-003",
+      "asset": "Laser Cutter M1",
+      "type": "Corrective",
+      "priority": "Critical",
+      "tech": "Robert Johnson",
+      "status": "Released",
+      "plannedDate": "2026-10-02"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WO-26-003-C-003",
+      "asset": "Injection Molder X",
+      "type": "Preventive",
+      "priority": "Medium",
+      "tech": "EMP-003",
+      "status": "Planned",
+      "plannedDate": "2026-10-15"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WO-26-004-C-003",
+      "asset": "SMT Line 1",
+      "type": "Calibration",
+      "priority": "Low",
+      "tech": "EMP-003",
+      "status": "Planned",
+      "plannedDate": "2026-10-20"
+    },
+    {
+      "companyId": "C-003",
+      "id": "WO-26-005-C-003",
+      "asset": "Forklift F-02",
+      "type": "Breakdown",
+      "priority": "High",
+      "tech": "External Service",
+      "status": "Open",
+      "plannedDate": "2026-10-01"
+    }
+  ],
+  "salesOrders": [
+    {
+      "companyId": "C-001",
+      "id": "SO-26-2001",
+      "customer": "Global AutoCorp",
+      "date": "2026-09-25",
+      "total": 45000,
+      "deliveryDate": "2026-10-20",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-001",
+      "id": "SO-26-2002",
+      "customer": "Tech Systems Integrators",
+      "date": "2026-09-28",
+      "total": 12500,
+      "deliveryDate": "2026-10-15",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-001",
+      "id": "SO-26-2003",
+      "customer": "National Distributors",
+      "date": "2026-10-01",
+      "total": 85000,
+      "deliveryDate": "2026-11-01",
+      "status": "Draft"
+    },
+    {
+      "companyId": "C-001",
+      "id": "SO-26-2004",
+      "customer": "EuroTech Machinery",
+      "date": "2026-10-02",
+      "total": 32000,
+      "deliveryDate": "2026-10-25",
+      "status": "Pending Approval"
+    },
+    {
+      "companyId": "C-001",
+      "id": "SO-26-2005",
+      "customer": "Local Retailers",
+      "date": "2026-10-02",
+      "total": 5400,
+      "deliveryDate": "2026-10-10",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-002",
+      "id": "SO-26-2001-C-002",
+      "customer": "Global AutoCorp",
+      "date": "2026-09-25",
+      "total": 45000,
+      "deliveryDate": "2026-10-20",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-002",
+      "id": "SO-26-2002-C-002",
+      "customer": "Tech Systems Integrators",
+      "date": "2026-09-28",
+      "total": 12500,
+      "deliveryDate": "2026-10-15",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-002",
+      "id": "SO-26-2003-C-002",
+      "customer": "National Distributors",
+      "date": "2026-10-01",
+      "total": 85000,
+      "deliveryDate": "2026-11-01",
+      "status": "Draft"
+    },
+    {
+      "companyId": "C-002",
+      "id": "SO-26-2004-C-002",
+      "customer": "EuroTech Machinery",
+      "date": "2026-10-02",
+      "total": 32000,
+      "deliveryDate": "2026-10-25",
+      "status": "Pending Approval"
+    },
+    {
+      "companyId": "C-002",
+      "id": "SO-26-2005-C-002",
+      "customer": "Local Retailers",
+      "date": "2026-10-02",
+      "total": 5400,
+      "deliveryDate": "2026-10-10",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-003",
+      "id": "SO-26-2001-C-003",
+      "customer": "Global AutoCorp",
+      "date": "2026-09-25",
+      "total": 45000,
+      "deliveryDate": "2026-10-20",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-003",
+      "id": "SO-26-2002-C-003",
+      "customer": "Tech Systems Integrators",
+      "date": "2026-09-28",
+      "total": 12500,
+      "deliveryDate": "2026-10-15",
+      "status": "Confirmed"
+    },
+    {
+      "companyId": "C-003",
+      "id": "SO-26-2003-C-003",
+      "customer": "National Distributors",
+      "date": "2026-10-01",
+      "total": 85000,
+      "deliveryDate": "2026-11-01",
+      "status": "Draft"
+    },
+    {
+      "companyId": "C-003",
+      "id": "SO-26-2004-C-003",
+      "customer": "EuroTech Machinery",
+      "date": "2026-10-02",
+      "total": 32000,
+      "deliveryDate": "2026-10-25",
+      "status": "Pending Approval"
+    },
+    {
+      "companyId": "C-003",
+      "id": "SO-26-2005-C-003",
+      "customer": "Local Retailers",
+      "date": "2026-10-02",
+      "total": 5400,
+      "deliveryDate": "2026-10-10",
+      "status": "Confirmed"
+    },
+    {
+      "customer": "88",
+      "total": "8",
+      "status": "Confirmed",
+      "date": "2026-10-06",
+      "deliveryDate": "2026-10-10",
+      "id": "SAL-509498",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T08:41:49.502Z"
+    }
+  ],
+  "dispatches": [
+    {
+      "companyId": "C-001",
+      "id": "DSP-26-001",
+      "soId": "SO-26-2002",
+      "warehouse": "WH-MAIN",
+      "date": "2026-10-14",
+      "status": "Scheduled"
+    },
+    {
+      "companyId": "C-001",
+      "id": "DSP-26-002",
+      "soId": "SO-26-2005",
+      "warehouse": "WH-MAIN",
+      "date": "2026-10-09",
+      "status": "Picking"
+    }
+  ],
+  "returns": [
+    {
+      "companyId": "C-001",
+      "id": "RET-26-001",
+      "soId": "SO-26-1950",
+      "customer": "Alpha Corp",
+      "reason": "Defective Product",
+      "status": "Received",
+      "amount": 1500
+    }
+  ],
+  "policies": [
+    {
+      "companyId": "C-001",
+      "id": "POL-001",
+      "name": "Code of Conduct v2",
+      "category": "Compliance",
+      "version": "2.0",
+      "status": "Published"
+    },
+    {
+      "companyId": "C-001",
+      "id": "POL-002",
+      "name": "Leave Policy 2026",
+      "category": "HR",
+      "version": "1.1",
+      "status": "Published"
+    },
+    {
+      "companyId": "C-001",
+      "id": "POL-003",
+      "name": "Safety Standards Manual",
+      "category": "Health & Safety",
+      "version": "3.0",
+      "status": "Under Review"
+    },
+    {
+      "companyId": "C-001",
+      "id": "POL-004",
+      "name": "Remote Work Guidelines",
+      "category": "HR",
+      "version": "1.0",
+      "status": "Published"
+    },
+    {
+      "name": "h",
+      "status": "Draft",
+      "version": "y",
+      "category": "Finished Good",
+      "id": "POL-259094",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T10:17:39.116Z"
+    }
+  ],
+  "payrolls": [
+    {
+      "companyId": "C-001",
+      "id": "PAY-26-09",
+      "period": "Sep 2026",
+      "gross": 255000,
+      "net": 202000,
+      "status": "Processed"
+    },
+    {
+      "companyId": "C-001",
+      "id": "PAY-26-10",
+      "period": "Oct 2026",
+      "gross": 260000,
+      "net": 205000,
+      "status": "Draft"
+    }
+  ],
+  "manufacturingItems": [],
+  "taxes": [
+    {
+      "id": "TAX-001",
+      "code": "TAX-001",
+      "name": "GST 18%",
+      "rate": 18,
+      "type": "Percentage",
+      "status": "Active"
+    },
+    {
+      "id": "TAX-002",
+      "code": "TAX-002",
+      "name": "VAT 5%",
+      "rate": 5,
+      "type": "Percentage",
+      "status": "Active"
+    },
+    {
+      "name": "ff",
+      "rate": 55,
+      "type": "Fixed",
+      "status": "Inactive",
+      "id": "TAX-245909",
+      "companyId": "C-001",
+      "createdAt": "2026-10-12T11:07:25.918Z"
+    }
+  ],
+  "systemAdmins": [
+    {
+      "id": "SYS-001",
+      "name": "Super Admin",
+      "email": "super@erp.com",
+      "status": "Active"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-1791804164294-354",
+      "timestamp": "2026-10-12T11:22:44.294Z",
+      "action": "CREATE",
+      "collection": "rawMaterials",
+      "recordId": "RAW-164274",
+      "details": {
+        "code": "d",
+        "name": "d",
+        "category": "Chemicals",
+        "uom": "EA",
+        "stock": "55",
+        "reorderLevel": "557",
+        "minStock": "77",
+        "maxStock": "7",
+        "warehouse": "WH-MAIN",
+        "bin": "77",
+        "status": "Draft",
+        "description": "55",
+        "id": "RAW-164274",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T11:22:44.294Z"
+      }
+    },
+    {
+      "id": "LOG-1791804123959-637",
+      "timestamp": "2026-10-12T11:22:03.959Z",
+      "action": "CREATE",
+      "collection": "vendors",
+      "recordId": "ff",
+      "details": {
+        "code": "ff",
+        "name": "ff",
+        "email": "d@gmail.com",
+        "contact": "dd",
+        "phone": "dd",
+        "gst": "dd",
+        "terms": "dd",
+        "category": "Finished Good",
+        "status": "Active",
+        "id": "ff",
+        "type": "Finished Good",
+        "location": "dd",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T11:22:03.959Z"
+      }
+    },
+    {
+      "id": "LOG-1791804123915-397",
+      "timestamp": "2026-10-12T11:22:03.915Z",
+      "action": "CREATE",
+      "collection": "vendors",
+      "recordId": "ff",
+      "details": {
+        "code": "ff",
+        "name": "ff",
+        "email": "d@gmail.com",
+        "contact": "dd",
+        "phone": "dd",
+        "gst": "dd",
+        "terms": "dd",
+        "category": "Finished Good",
+        "status": "Active",
+        "id": "ff",
+        "type": "Finished Good",
+        "location": "dd",
+        "companyId": "C-001"
+      }
+    },
+    {
+      "id": "LOG-1791804102834-847",
+      "timestamp": "2026-10-12T11:21:42.835Z",
+      "action": "CREATE",
+      "collection": "vendors",
+      "recordId": "ff",
+      "details": {
+        "code": "ff",
+        "name": "ff",
+        "contact": "ff",
+        "email": "ff@gmail.com",
+        "phone": "ff",
+        "gst": "f",
+        "category": "Finished Good",
+        "terms": "ff",
+        "status": "Active",
+        "id": "ff",
+        "type": "Finished Good",
+        "location": "ff",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T11:21:42.834Z"
+      }
+    },
+    {
+      "id": "LOG-1791804102767-169",
+      "timestamp": "2026-10-12T11:21:42.767Z",
+      "action": "CREATE",
+      "collection": "vendors",
+      "recordId": "ff",
+      "details": {
+        "code": "ff",
+        "name": "ff",
+        "contact": "ff",
+        "email": "ff@gmail.com",
+        "phone": "ff",
+        "gst": "f",
+        "category": "Finished Good",
+        "terms": "ff",
+        "status": "Active",
+        "id": "ff",
+        "type": "Finished Good",
+        "location": "ff",
+        "companyId": "C-001"
+      }
+    },
+    {
+      "id": "LOG-1791803913143-579",
+      "timestamp": "2026-10-12T11:18:33.143Z",
+      "action": "CREATE",
+      "collection": "vendors",
+      "recordId": "V-3143",
+      "details": {
+        "code": "V-999",
+        "name": "Om Enterprises",
+        "contact": "Rajesh",
+        "email": "rajesh@om.com",
+        "phone": "9999999999",
+        "gst": "27AAA",
+        "terms": "Net 30",
+        "category": "Raw Material",
+        "status": "Active",
+        "companyId": "C-001",
+        "id": "V-3143"
+      }
+    },
+    {
+      "id": "LOG-1791803551576-794",
+      "timestamp": "2026-10-12T11:12:31.576Z",
+      "action": "DELETE",
+      "collection": "vendors",
+      "recordId": "V-005",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803549731-11",
+      "timestamp": "2026-10-12T11:12:29.731Z",
+      "action": "DELETE",
+      "collection": "vendors",
+      "recordId": "V-004",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803548001-407",
+      "timestamp": "2026-10-12T11:12:28.001Z",
+      "action": "DELETE",
+      "collection": "vendors",
+      "recordId": "V-003",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803546309-960",
+      "timestamp": "2026-10-12T11:12:26.309Z",
+      "action": "DELETE",
+      "collection": "vendors",
+      "recordId": "V-002",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803544207-389",
+      "timestamp": "2026-10-12T11:12:24.207Z",
+      "action": "DELETE",
+      "collection": "vendors",
+      "recordId": "V-001",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803539154-49",
+      "timestamp": "2026-10-12T11:12:19.154Z",
+      "action": "DELETE",
+      "collection": "manufacturingItems",
+      "recordId": "MAN-233699",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803536064-993",
+      "timestamp": "2026-10-12T11:12:16.064Z",
+      "action": "DELETE",
+      "collection": "manufacturingItems",
+      "recordId": "MAN-020425",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803534217-748",
+      "timestamp": "2026-10-12T11:12:14.217Z",
+      "action": "DELETE",
+      "collection": "manufacturingItems",
+      "recordId": "MAN-840614",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803532280-134",
+      "timestamp": "2026-10-12T11:12:12.280Z",
+      "action": "DELETE",
+      "collection": "manufacturingItems",
+      "recordId": "MFG-003",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803530042-79",
+      "timestamp": "2026-10-12T11:12:10.042Z",
+      "action": "DELETE",
+      "collection": "manufacturingItems",
+      "recordId": "MFG-002",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803528040-658",
+      "timestamp": "2026-10-12T11:12:08.040Z",
+      "action": "DELETE",
+      "collection": "manufacturingItems",
+      "recordId": "MFG-001",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791803245918-984",
+      "timestamp": "2026-10-12T11:07:25.919Z",
+      "action": "CREATE",
+      "collection": "taxes",
+      "recordId": "TAX-245909",
+      "details": {
+        "name": "ff",
+        "rate": 55,
+        "type": "Fixed",
+        "status": "Inactive",
+        "id": "TAX-245909",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T11:07:25.918Z"
+      }
+    },
+    {
+      "id": "LOG-1791803233708-782",
+      "timestamp": "2026-10-12T11:07:13.709Z",
+      "action": "CREATE",
+      "collection": "manufacturingItems",
+      "recordId": "MAN-233699",
+      "details": {
+        "code": "ddd",
+        "name": "dd",
+        "type": "Component",
+        "uom": "ltr",
+        "routing": "dd",
+        "status": "Inactive",
+        "id": "MAN-233699",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T11:07:13.708Z"
+      }
+    },
+    {
+      "id": "LOG-1791800259116-730",
+      "timestamp": "2026-10-12T10:17:39.116Z",
+      "action": "CREATE",
+      "collection": "policies",
+      "recordId": "POL-259094",
+      "details": {
+        "name": "h",
+        "status": "Draft",
+        "version": "y",
+        "category": "Finished Good",
+        "id": "POL-259094",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T10:17:39.116Z"
+      }
+    },
+    {
+      "id": "LOG-1791800059712-393",
+      "timestamp": "2026-10-12T10:14:19.712Z",
+      "action": "CREATE",
+      "collection": "financialYears",
+      "recordId": "FIN-059703",
+      "details": {
+        "code": "gaesh ",
+        "name": "d",
+        "startDate": "2026-10-08",
+        "endDate": "2026-10-02",
+        "status": "Inactive",
+        "id": "FIN-059703",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T10:14:19.711Z"
+      }
+    },
+    {
+      "id": "LOG-1791800020442-997",
+      "timestamp": "2026-10-12T10:13:40.442Z",
+      "action": "CREATE",
+      "collection": "manufacturingItems",
+      "recordId": "MAN-020425",
+      "details": {
+        "code": "ganesh ",
+        "name": "ganesh ",
+        "type": "Finished Good",
+        "uom": "pcs",
+        "routing": "",
+        "status": "Active",
+        "id": "MAN-020425",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T10:13:40.442Z"
+      }
+    },
+    {
+      "id": "LOG-1791799495862-640",
+      "timestamp": "2026-10-12T10:04:55.862Z",
+      "action": "CREATE",
+      "collection": "grns",
+      "recordId": "GRN-495867",
+      "details": {
+        "poNumber": "555",
+        "vendorName": "55",
+        "date": "2026-10-02",
+        "warehouse": "WH-CHEM",
+        "bin": "55",
+        "status": "Draft",
+        "id": "GRN-495867",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T10:04:55.862Z"
+      }
+    },
+    {
+      "id": "LOG-1791799481673-559",
+      "timestamp": "2026-10-12T10:04:41.673Z",
+      "action": "CREATE",
+      "collection": "purchaseOrders",
+      "recordId": "PUR-481678",
+      "details": {
+        "vendorId": "V-003",
+        "vendorName": "Fasteners Direct",
+        "date": "2026-10-17",
+        "expectedDate": "2026-10-23",
+        "warehouse": "WH-MAIN",
+        "amount": 555,
+        "status": "Draft",
+        "orderNumber": "PO-26-1390",
+        "orderDate": "2026-10-17",
+        "total": 555,
+        "companyId": "C-001",
+        "id": "PUR-481678",
+        "createdAt": "2026-10-12T10:04:41.673Z"
+      }
+    },
+    {
+      "id": "LOG-1791798413547-83",
+      "timestamp": "2026-10-12T09:46:53.547Z",
+      "action": "CREATE",
+      "collection": "productionOrders",
+      "recordId": "PLN-26-7351",
+      "details": {
+        "id": "PLN-26-7351",
+        "item": "h",
+        "qty": 55,
+        "bom": "4",
+        "routing": "4",
+        "plant": "Plant-Molding",
+        "startDate": "2026-10-12",
+        "dueDate": "2026-11-07",
+        "status": "Planned",
+        "progress": 0,
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T09:46:53.546Z"
+      }
+    },
+    {
+      "id": "LOG-1791797731874-50",
+      "timestamp": "2026-10-12T09:35:31.874Z",
+      "action": "CREATE",
+      "collection": "productionOrders",
+      "recordId": "PLN-26-3995",
+      "details": {
+        "id": "PLN-26-3995",
+        "item": "Heavy Duty Pump Component",
+        "qty": 150,
+        "bom": "BOM-100",
+        "routing": "RT-100",
+        "plant": "Plant-Main",
+        "startDate": "2026-10-12",
+        "dueDate": "2026-10-19",
+        "status": "Planned",
+        "progress": 0,
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T09:35:31.874Z"
+      }
+    },
+    {
+      "id": "LOG-1791794563579-900",
+      "timestamp": "2026-10-12T08:42:43.579Z",
+      "action": "CREATE",
+      "collection": "grns",
+      "recordId": "GRN-563578",
+      "details": {
+        "poNumber": "55",
+        "vendorName": "55",
+        "warehouse": "WH-CHEM",
+        "date": "2026-10-03",
+        "bin": "5",
+        "status": "Draft",
+        "id": "GRN-563578",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T08:42:43.579Z"
+      }
+    },
+    {
+      "id": "LOG-1791794549076-722",
+      "timestamp": "2026-10-12T08:42:29.076Z",
+      "action": "CREATE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-26-9058",
+      "details": {
+        "vendorId": "V-004",
+        "vendorName": "ElectroComponents Inc",
+        "date": "2026-10-09",
+        "expectedDate": "2026-10-01",
+        "status": "Submitted",
+        "amount": 88,
+        "warehouse": "WH-CHEM",
+        "orderNumber": "PO-26-9058",
+        "orderDate": "2026-10-09",
+        "total": 88,
+        "companyId": "C-001",
+        "id": "PO-26-9058",
+        "createdAt": "2026-10-12T08:42:29.076Z"
+      }
+    },
+    {
+      "id": "LOG-1791794549058-382",
+      "timestamp": "2026-10-12T08:42:29.058Z",
+      "action": "CREATE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-26-9058",
+      "details": {
+        "vendorId": "V-004",
+        "vendorName": "ElectroComponents Inc",
+        "date": "2026-10-09",
+        "expectedDate": "2026-10-01",
+        "status": "Submitted",
+        "amount": 88,
+        "warehouse": "WH-CHEM",
+        "orderNumber": "PO-26-9058",
+        "orderDate": "2026-10-09",
+        "total": 88,
+        "companyId": "C-001",
+        "id": "PO-26-9058"
+      }
+    },
+    {
+      "id": "LOG-1791794530898-665",
+      "timestamp": "2026-10-12T08:42:10.898Z",
+      "action": "DELETE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-26-1001",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791794530887-398",
+      "timestamp": "2026-10-12T08:42:10.887Z",
+      "action": "DELETE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-26-1001",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791794523702-470",
+      "timestamp": "2026-10-12T08:42:03.702Z",
+      "action": "CREATE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-26-3670",
+      "details": {
+        "vendorId": "V-004",
+        "vendorName": "ElectroComponents Inc",
+        "expectedDate": "2026-10-02",
+        "date": "2026-10-15",
+        "warehouse": "WH-MAIN",
+        "amount": 8,
+        "status": "Draft",
+        "orderNumber": "PO-26-3670",
+        "orderDate": "2026-10-15",
+        "total": 8,
+        "companyId": "C-001",
+        "id": "PO-26-3670",
+        "createdAt": "2026-10-12T08:42:03.702Z"
+      }
+    },
+    {
+      "id": "LOG-1791794523678-334",
+      "timestamp": "2026-10-12T08:42:03.679Z",
+      "action": "CREATE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-26-3670",
+      "details": {
+        "vendorId": "V-004",
+        "vendorName": "ElectroComponents Inc",
+        "expectedDate": "2026-10-02",
+        "date": "2026-10-15",
+        "warehouse": "WH-MAIN",
+        "amount": 8,
+        "status": "Draft",
+        "orderNumber": "PO-26-3670",
+        "orderDate": "2026-10-15",
+        "total": 8,
+        "companyId": "C-001",
+        "id": "PO-26-3670"
+      }
+    },
+    {
+      "id": "LOG-1791794509502-267",
+      "timestamp": "2026-10-12T08:41:49.502Z",
+      "action": "CREATE",
+      "collection": "salesOrders",
+      "recordId": "SAL-509498",
+      "details": {
+        "customer": "88",
+        "total": "8",
+        "status": "Confirmed",
+        "date": "2026-10-06",
+        "deliveryDate": "2026-10-10",
+        "id": "SAL-509498",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T08:41:49.502Z"
+      }
+    },
+    {
+      "id": "LOG-1791794485458-560",
+      "timestamp": "2026-10-12T08:41:25.458Z",
+      "action": "CREATE",
+      "collection": "warehouses",
+      "recordId": "WAR-485442",
+      "details": {
+        "code": "f",
+        "name": "f",
+        "location": "f",
+        "capacity": "5",
+        "binCount": "88",
+        "manager": "8",
+        "status": "Active",
+        "id": "WAR-485442",
+        "companyId": "C-001",
+        "createdAt": "2026-10-12T08:41:25.458Z"
+      }
+    },
+    {
+      "id": "LOG-1791790054896-849",
+      "timestamp": "2026-10-12T07:27:34.896Z",
+      "action": "CREATE",
+      "collection": "purchaseOrders",
+      "recordId": "PO-DEMO-TEST-1",
+      "details": {
+        "orderNumber": "PO-DEMO-TEST-1",
+        "vendorName": "Apex Steel Traders",
+        "warehouse": "WH-MAIN",
+        "total": 9999,
+        "status": "Released",
+        "id": "PO-DEMO-TEST-1",
+        "amount": 9999,
+        "orderDate": "2026-10-12",
+        "date": "2026-10-12"
+      }
+    },
+    {
+      "id": "LOG-1791788853118-680",
+      "timestamp": "2026-10-12T07:07:33.118Z",
+      "action": "CREATE",
+      "collection": "employees",
+      "recordId": "EMP-853118",
+      "details": {
+        "name": "dd"
+      }
+    },
+    {
+      "id": "LOG-1791788840617-33",
+      "timestamp": "2026-10-12T07:07:20.617Z",
+      "action": "CREATE",
+      "collection": "manufacturingItems",
+      "recordId": "MAN-840614",
+      "details": {
+        "name": "dd"
+      }
+    },
+    {
+      "id": "LOG-1791788397025-230",
+      "timestamp": "2026-10-12T06:59:57.025Z",
+      "action": "CREATE",
+      "collection": "rawMaterials",
+      "recordId": "RAW-396994",
+      "details": {
+        "name": "ba"
+      }
+    },
+    {
+      "id": "LOG-1791788320362-773",
+      "timestamp": "2026-10-12T06:58:40.363Z",
+      "action": "DELETE",
+      "collection": "rawMaterials",
+      "recordId": "RAW-034515",
+      "details": {}
+    },
+    {
+      "id": "LOG-1791788034516-602",
+      "timestamp": "2026-10-12T06:53:54.516Z",
+      "action": "CREATE",
+      "collection": "rawMaterials",
+      "recordId": "RAW-034515",
+      "details": {
+        "name": "Demo Test Steel"
+      }
+    }
+  ]
+}

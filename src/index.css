@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Synthex/Frost Glass Theme */
+  --color-primary: #151e2d; /* Dark Navy/Slate */
+  --color-primary-hover: #2c3e50;
+  --color-primary-light: rgba(255, 255, 255, 0.6);
+  --color-accent: #2563eb;
+  --color-accent-light: rgba(37, 99, 235, 0.1);
+  
+  /* Icy Silver/Blue Gradient */
+  --color-background: #eff4f9;
+  
+  /* Glassmorphism surfaces */
+  --color-surface: #ffffff; 
+  --color-surface-dark: #1a2639; /* Dark pills/buttons */
+  
+  --color-sidebar: #ffffff;
+  --color-topbar: transparent;
+  
+  --color-text-dark: #0f172a;
+  --color-text-gray: #64748b;
+  --color-text-light: #94a3b8;
+  
+  --color-border: #f1f5f9;
+  
+  --color-success: #38a169;
+  --color-warning: #d69e2e;
+  --color-error: #e53e3e;
+  
+  --font-family: 'Manrope', sans-serif;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.06);
+  --border-radius-lg: 20px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Utility classes */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-dark-pill {
+  background-color: var(--color-surface-dark);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-dark-pill:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background-color: var(--color-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border);
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.dark-glass-card {
+  background: var(--color-surface-dark);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Layout Utilities */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-gray {
+  color: var(--color-text-gray);
+}
+
+/* Forms and Global Inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Apply to all inputs, selects, textareas for consistency */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="search"],
+select,
+textarea,
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 14px;
+  color: var(--color-text-dark);
+  outline: none;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+input:hover:not(:disabled),
+select:hover:not(:disabled),
+textarea:hover:not(:disabled),
+.form-input:hover:not(:disabled) {
+  border-color: #cbd5e1;
+  background: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.form-input:focus {
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled,
+.form-input:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+  border-color: #e2e8f0;
+}
+
+/* Ensure select looks nice with custom arrow */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+/* Badges */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-badge::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #047857;
+}
+.badge-success::before { background: #10b981; }
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+}
+.badge-warning::before { background: #f59e0b; }
+
+.badge-error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+}
+.badge-error::before { background: #ef4444; }
+
+.badge-primary {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1d4ed8;
+}
+.badge-primary::before { background: #3b82f6; }
+
+.badge-gray {
+  background: rgba(100, 116, 139, 0.1);
+  color: #475569;
+}
+.badge-gray::before { background: #64748b; }
+
+/* Category Pills (No dots) */
+.cat-pill {
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+.cat-metal { background: #e0e7ff; color: #4338ca; }
+.cat-packaging { background: #fae8ff; color: #a21caf; }
+.cat-chemical { background: #ffe4e6; color: #be123c; }

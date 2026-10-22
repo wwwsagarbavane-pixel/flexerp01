@@ -1,0 +1,181 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  margin: 0;
+  border-radius: 0 24px 24px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.03);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon-blue {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(43, 89, 255, 0.3);
+}
+
+.logo-inner-square {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1a1c1e;
+  letter-spacing: -0.5px;
+}
+
+.sidebar-scroll {
+  padding: 0 24px 24px;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  color: #64748b;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #334155;
+}
+
+.nav-link.active {
+  background-color: rgba(43, 89, 255, 0.08);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.nav-link svg {
+  transition: color 0.2s ease;
+  stroke-width: 2px;
+}
+
+.nav-link.active svg {
+  color: var(--color-primary);
+}
+
+.sidebar-footer { 
+  margin-top: auto; 
+  padding: 24px; 
+}
+
+/* PRO UPGRADE CARD */
+.pro-upgrade-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pro-upgrade-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.pro-icon-container {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #fef3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pro-icon {
+  color: #d97706;
+}
+
+.pro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pro-text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.pro-text p {
+  font-size: 10px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.pro-arrow {
+  color: #94a3b8;
+}
